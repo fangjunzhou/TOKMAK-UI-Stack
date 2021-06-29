@@ -54,6 +54,7 @@
   <ItemGroup>
      <Compile Include="Assets\Package\Runtime\UIPanelElement.cs" />
      <Compile Include="Assets\Package\Runtime\UIStackManager.cs" />
+     <Compile Include="Assets\Scripts\SampleMainPanelElement.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program Files/Unity Editor/2020.3.11f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
