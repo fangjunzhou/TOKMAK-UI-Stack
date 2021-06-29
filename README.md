@@ -32,3 +32,23 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 ```
 "com.fintokmak.uistacksystem": "https://github.com/Fangjun-Zhou/Unity-UI-Stack-System.git#upm-uistacksystem"
 ```
+
+# 使用
+
+## UI Panel Element
+
+UIPanelElement是一个继承自MonoBehavior的子类，也是整个UI Stack System中所有stack-based UI需要继承的基类。
+
+这个类中除了包含一个对调用自身的UI Stack Manager（后文中会介绍）的引用和一个Panel name字段，还有四个UI Stack操作的回调函数。
+
+这四个函数分别是`OnPush`, `OnPop`, `OnPause`, `OnResume`。
+
+后文中还会详细介绍这四个关键函数的意义和生命周期中调用他们的过程
+
+除此之外，UIPanelElement基类还提供了四个对应的UnityEvent在对应的生命周期中被调用。
+
+## UI Stack Manager
+
+UIStackManager是UI Stack System的核心组件，这个组件通过一个StackADT对其所有子面板进行管理。
+
+其中，UIStackManage所有可调用的
