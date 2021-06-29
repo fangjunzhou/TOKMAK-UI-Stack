@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
@@ -14,13 +15,27 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         #region Public Field
 
         /// <summary>
+        /// The root manager of current UIPanelElement
+        /// </summary>
+        [BoxGroup("Panel Property")]
+        public UIStackManager panelRootManager;
+        
+        [Space]
+        
+        /// <summary>
         /// The name of current UIPanelElement
         /// </summary>
         [BoxGroup("Panel Property")]
         public string panelName;
 
         #endregion
-        
+
+        private void Awake()
+        {
+            // By default the panel element should be inactivate
+            gameObject.SetActive(false);
+        }
+
         #region UI Stack Callback Methods
 
         /// <summary>
