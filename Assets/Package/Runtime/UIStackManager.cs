@@ -7,7 +7,7 @@ namespace FinTOKMAK.UIStackSystem.Runtime
     /// The SerializableDictionary that has int value as keys and UIPanelElements as values
     /// </summary>
     [System.Serializable]
-    public class IntUIPanelElementDict : SerializableDictionary<int, UIPanelElement>{}
+    public class UIPanelElementStringDict : SerializableDictionary<UIPanelElement, string>{}
     
     /// <summary>
     /// This is the Stack Manager for the UI Stack System
@@ -17,7 +17,9 @@ namespace FinTOKMAK.UIStackSystem.Runtime
     {
         #region Public Field
         
-        public IntUIPanelElementDict UIPanels;
+        [Tooltip("This field list all the UIPanelElement children. " +
+                 "The key is panel name and value is UIPanelElement MonoBehaviour.")]
+        public UIPanelElementStringDict UIPanels;
         
         #endregion
     }
