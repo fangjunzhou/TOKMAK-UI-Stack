@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.serializabledictionary": {
+      "version": "https://github.com/Fangjun-Zhou/Unity-SerializableDictionary.git#77d100a9a51b8ead607659f0fbeb436589e62a49",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "77d100a9a51b8ead607659f0fbeb436589e62a49"
+    },
     "com.unity.collab-proxy": {
       "version": "1.5.7",
       "depth": 0,
