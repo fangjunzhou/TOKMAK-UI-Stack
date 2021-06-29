@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Package.Editor
+  commentId: N:Package.Editor
+  id: Package.Editor
+  children:
+  - Package.Editor.UIStackManagerCustomEditor
+  langs:
+  - csharp
+  - vb
+  name: Package.Editor
+  nameWithType: Package.Editor
+  fullName: Package.Editor
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Package.Editor.UIStackManagerCustomEditor
+  commentId: T:Package.Editor.UIStackManagerCustomEditor
+  name: UIStackManagerCustomEditor
+  nameWithType: UIStackManagerCustomEditor
+  fullName: Package.Editor.UIStackManagerCustomEditor

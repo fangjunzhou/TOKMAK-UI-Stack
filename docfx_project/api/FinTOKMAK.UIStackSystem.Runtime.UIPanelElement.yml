@@ -1,0 +1,383 @@
+### YamlMime:ManagedReference
+items:
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  id: UIPanelElement
+  parent: FinTOKMAK.UIStackSystem.Runtime
+  children:
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPop
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPush
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnResume
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelName
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelRootManager
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.pauseEvent
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.popEvent
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.pushEvent
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.resumeEvent
+  langs:
+  - csharp
+  - vb
+  name: UIPanelElement
+  nameWithType: UIPanelElement
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  type: Class
+  source:
+    id: UIPanelElement
+    path: ''
+    startLine: 182
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThis is the base class for UIPanel\nAll the UI panel logic class should inherit this class\n"
+  example: []
+  syntax:
+    content: 'public class UIPanelElement : MonoBehaviour'
+    content.vb: >-
+      Public Class UIPanelElement
+
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelRootManager
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelRootManager
+  id: panelRootManager
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: panelRootManager
+  nameWithType: UIPanelElement.panelRootManager
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelRootManager
+  type: Field
+  source:
+    id: panelRootManager
+    path: ''
+    startLine: 191
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThe root manager of current UIPanelElement\n"
+  example: []
+  syntax:
+    content: public UIStackManager panelRootManager
+    return:
+      type: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+    content.vb: Public panelRootManager As UIStackManager
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelName
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelName
+  id: panelName
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: panelName
+  nameWithType: UIPanelElement.panelName
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelName
+  type: Field
+  source:
+    id: panelName
+    path: ''
+    startLine: 198
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThe name of current UIPanelElement\n"
+  example: []
+  syntax:
+    content: public string panelName
+    return:
+      type: System.String
+    content.vb: Public panelName As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.pushEvent
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.pushEvent
+  id: pushEvent
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: pushEvent
+  nameWithType: UIPanelElement.pushEvent
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.pushEvent
+  type: Field
+  source:
+    id: pushEvent
+    path: ''
+    startLine: 201
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  syntax:
+    content: public UnityEvent pushEvent
+    return:
+      type: UnityEvent
+    content.vb: Public pushEvent As UnityEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.popEvent
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.popEvent
+  id: popEvent
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: popEvent
+  nameWithType: UIPanelElement.popEvent
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.popEvent
+  type: Field
+  source:
+    id: popEvent
+    path: ''
+    startLine: 203
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  syntax:
+    content: public UnityEvent popEvent
+    return:
+      type: UnityEvent
+    content.vb: Public popEvent As UnityEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.pauseEvent
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.pauseEvent
+  id: pauseEvent
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: pauseEvent
+  nameWithType: UIPanelElement.pauseEvent
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.pauseEvent
+  type: Field
+  source:
+    id: pauseEvent
+    path: ''
+    startLine: 205
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  syntax:
+    content: public UnityEvent pauseEvent
+    return:
+      type: UnityEvent
+    content.vb: Public pauseEvent As UnityEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.resumeEvent
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.resumeEvent
+  id: resumeEvent
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: resumeEvent
+  nameWithType: UIPanelElement.resumeEvent
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.resumeEvent
+  type: Field
+  source:
+    id: resumeEvent
+    path: ''
+    startLine: 207
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  syntax:
+    content: public UnityEvent resumeEvent
+    return:
+      type: UnityEvent
+    content.vb: Public resumeEvent As UnityEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPush
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPush
+  id: OnPush
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: OnPush()
+  nameWithType: UIPanelElement.OnPush()
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPush()
+  type: Method
+  source:
+    id: OnPush
+    path: ''
+    startLine: 222
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThis method will be called when the UIPanelElement is pushed into the UI Stack\n"
+  example: []
+  syntax:
+    content: public virtual void OnPush()
+    content.vb: Public Overridable Sub OnPush
+  overload: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPush*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPop
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPop
+  id: OnPop
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: OnPop()
+  nameWithType: UIPanelElement.OnPop()
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPop()
+  type: Method
+  source:
+    id: OnPop
+    path: ''
+    startLine: 230
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThis method will be called when the UIPanelElement is popped out from the UI Stack\n"
+  example: []
+  syntax:
+    content: public virtual void OnPop()
+    content.vb: Public Overridable Sub OnPop
+  overload: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPop*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause
+  id: OnPause
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: OnPause()
+  nameWithType: UIPanelElement.OnPause()
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause()
+  type: Method
+  source:
+    id: OnPause
+    path: ''
+    startLine: 242
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThis method will be called when the UIPanelElement is paused\nTo be specific, when current UIPanelElement is on the top of the UI Stack,\nthe UIPanelElement is not paused\nWhen there&apos;s a new UIPanelElement pushed into the stack and current is no longer at the top of the stack,\nOnPause callback method will be called\n"
+  example: []
+  syntax:
+    content: public virtual void OnPause()
+    content.vb: Public Overridable Sub OnPause
+  overload: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnResume
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnResume
+  id: OnResume
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  langs:
+  - csharp
+  - vb
+  name: OnResume()
+  nameWithType: UIPanelElement.OnResume()
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnResume()
+  type: Method
+  source:
+    id: OnResume
+    path: ''
+    startLine: 255
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThis method will be called when the UIPanelElement is resumed\nTo be specific, when current UIPanelElement is not on the top of the UI Stack,\nthe UIPanelElement is paused\nWhen the UIPanelElement on top of current panel is popped out,\nand current UIPanelElement is on the top of the stack,\nOnResume callback method will be called\n"
+  example: []
+  syntax:
+    content: public virtual void OnResume()
+    content.vb: Public Overridable Sub OnResume
+  overload: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnResume*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: FinTOKMAK.UIStackSystem.Runtime
+  commentId: N:FinTOKMAK.UIStackSystem.Runtime
+  name: FinTOKMAK.UIStackSystem.Runtime
+  nameWithType: FinTOKMAK.UIStackSystem.Runtime
+  fullName: FinTOKMAK.UIStackSystem.Runtime
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  parent: FinTOKMAK.UIStackSystem.Runtime
+  name: UIStackManager
+  nameWithType: UIStackManager
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEvent
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEvent
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPush*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPush
+  name: OnPush
+  nameWithType: UIPanelElement.OnPush
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPush
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPop*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPop
+  name: OnPop
+  nameWithType: UIPanelElement.OnPop
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPop
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause
+  name: OnPause
+  nameWithType: UIPanelElement.OnPause
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnResume*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnResume
+  name: OnResume
+  nameWithType: UIPanelElement.OnResume
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnResume

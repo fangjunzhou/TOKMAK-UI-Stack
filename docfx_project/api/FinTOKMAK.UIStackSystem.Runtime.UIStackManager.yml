@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  id: UIStackManager
+  parent: FinTOKMAK.UIStackSystem.Runtime
+  children:
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.initializationPanel
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement)
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.UIPanels
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.useInitializePanel
+  langs:
+  - csharp
+  - vb
+  name: UIStackManager
+  nameWithType: UIStackManager
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  type: Class
+  source:
+    id: UIStackManager
+    path: ''
+    startLine: 280
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThis is the Stack Manager for the UI Stack System\nThis MonoBehaviour should be attached to every root GameObject of UIPanelElements\n"
+  example: []
+  syntax:
+    content: 'public class UIStackManager : MonoBehaviour'
+    content.vb: >-
+      Public Class UIStackManager
+
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.UIPanels
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.UIPanels
+  id: UIPanels
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  langs:
+  - csharp
+  - vb
+  name: UIPanels
+  nameWithType: UIStackManager.UIPanels
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.UIPanels
+  type: Field
+  source:
+    id: UIPanels
+    path: ''
+    startLine: 290
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nAll the available UIPanelElements\n"
+  example: []
+  syntax:
+    content: public UIPanelElementStringDict UIPanels
+    return:
+      type: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
+    content.vb: Public UIPanels As UIPanelElementStringDict
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.useInitializePanel
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.useInitializePanel
+  id: useInitializePanel
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  langs:
+  - csharp
+  - vb
+  name: useInitializePanel
+  nameWithType: UIStackManager.useInitializePanel
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.useInitializePanel
+  type: Field
+  source:
+    id: useInitializePanel
+    path: ''
+    startLine: 295
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nif the UIStackManager has an initialization panel\n"
+  example: []
+  syntax:
+    content: public bool useInitializePanel
+    return:
+      type: System.Boolean
+    content.vb: Public useInitializePanel As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.initializationPanel
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.initializationPanel
+  id: initializationPanel
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  langs:
+  - csharp
+  - vb
+  name: initializationPanel
+  nameWithType: UIStackManager.initializationPanel
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.initializationPanel
+  type: Field
+  source:
+    id: initializationPanel
+    path: ''
+    startLine: 300
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThe panel that will be pushed into the stack when Start\n"
+  example: []
+  syntax:
+    content: public UIPanelElement initializationPanel
+    return:
+      type: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+    content.vb: Public initializationPanel As UIPanelElement
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek
+  id: Peek
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  langs:
+  - csharp
+  - vb
+  name: Peek()
+  nameWithType: UIStackManager.Peek()
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek()
+  type: Method
+  source:
+    id: Peek
+    path: ''
+    startLine: 327
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nPeek at the UIStack to check the top of UI Stack\n"
+  example: []
+  syntax:
+    content: public UIPanelElement Peek()
+    return:
+      type: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+      description: ''
+    content.vb: Public Function Peek As UIPanelElement
+  overload: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement)
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement)
+  id: Push(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement)
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  langs:
+  - csharp
+  - vb
+  name: Push(UIPanelElement)
+  nameWithType: UIStackManager.Push(UIPanelElement)
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement)
+  type: Method
+  source:
+    id: Push
+    path: ''
+    startLine: 336
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nPush a UIPanelElement into the UIStack\n"
+  example: []
+  syntax:
+    content: public void Push(UIPanelElement panel)
+    parameters:
+    - id: panel
+      type: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+      description: the panel that need to be pushed into the stack
+    content.vb: Public Sub Push(panel As UIPanelElement)
+  overload: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop
+  id: Pop
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  langs:
+  - csharp
+  - vb
+  name: Pop()
+  nameWithType: UIStackManager.Pop()
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop()
+  type: Method
+  source:
+    id: Pop
+    path: ''
+    startLine: 359
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nPop the panel at the top of the stack\n"
+  example: []
+  syntax:
+    content: public UIPanelElement Pop()
+    return:
+      type: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+      description: the panel popped out from the stack
+    content.vb: Public Function Pop As UIPanelElement
+  overload: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: FinTOKMAK.UIStackSystem.Runtime
+  commentId: N:FinTOKMAK.UIStackSystem.Runtime
+  name: FinTOKMAK.UIStackSystem.Runtime
+  nameWithType: FinTOKMAK.UIStackSystem.Runtime
+  fullName: FinTOKMAK.UIStackSystem.Runtime
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
+  parent: FinTOKMAK.UIStackSystem.Runtime
+  name: UIPanelElementStringDict
+  nameWithType: UIPanelElementStringDict
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+  parent: FinTOKMAK.UIStackSystem.Runtime
+  name: UIPanelElement
+  nameWithType: UIPanelElement
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek
+  name: Peek
+  nameWithType: UIStackManager.Peek
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push
+  name: Push
+  nameWithType: UIStackManager.Push
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop
+  name: Pop
+  nameWithType: UIStackManager.Pop
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop

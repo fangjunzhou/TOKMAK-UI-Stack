@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
+  id: UIPanelElementStringDict
+  parent: FinTOKMAK.UIStackSystem.Runtime
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: UIPanelElementStringDict
+  nameWithType: UIPanelElementStringDict
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
+  type: Class
+  source:
+    id: UIPanelElementStringDict
+    path: ''
+    startLine: 273
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThe SerializableDictionary that has int value as keys and UIPanelElements as values\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class UIPanelElementStringDict : SerializableDictionary<UIPanelElement, string>
+    content.vb: >-
+      <Serializable>
+
+      Public Class UIPanelElementStringDict
+
+          Inherits SerializableDictionary(Of UIPanelElement, String)
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: FinTOKMAK.UIStackSystem.Runtime
+  commentId: N:FinTOKMAK.UIStackSystem.Runtime
+  name: FinTOKMAK.UIStackSystem.Runtime
+  nameWithType: FinTOKMAK.UIStackSystem.Runtime
+  fullName: FinTOKMAK.UIStackSystem.Runtime
