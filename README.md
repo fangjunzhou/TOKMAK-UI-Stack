@@ -37,6 +37,8 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 
 ## UI Panel Element
 
+![image](https://user-images.githubusercontent.com/79500078/123815643-39b54680-d929-11eb-9423-a2ba0d2cc4f2.png)
+
 UIPanelElement是一个继承自MonoBehavior的子类，也是整个UI Stack System中所有stack-based UI需要继承的基类。
 
 这个类中除了包含一个对调用自身的UI Stack Manager（后文中会介绍）的引用和一个Panel name字段，还有四个UI Stack操作的回调函数。
@@ -49,6 +51,22 @@ UIPanelElement是一个继承自MonoBehavior的子类，也是整个UI Stack Sys
 
 ## UI Stack Manager
 
+![image](https://user-images.githubusercontent.com/79500078/123814907-a9770180-d928-11eb-9ece-3fd425de3a66.png)
+
 UIStackManager是UI Stack System的核心组件，这个组件通过一个StackADT对其所有子面板进行管理。
 
-其中，UIStackManage所有可调用的
+其中，UIStackManage所有可调用的UIPanelElement以<UIPanelElement, string>字典的形式储存在UIPanels中。Key是对应的UIPanelElement，Value是Panel name。
+
+HasInitializePanel控制UI Stack Manager的初始化Panel。当取消勾选时，场景载入时将不会有Panel被压入UI Stack。
+
+InitializationPanel是初始化压入的Panel，此Panel必须处于UIPanels中才可以被调用
+
+## UI Stack 生命周期
+
+![image](https://user-images.githubusercontent.com/79500078/123818674-c2cd7d00-d92b-11eb-84bd-96b6a2f625bf.png)
+
+![image](https://user-images.githubusercontent.com/79500078/123818459-9580cf00-d92b-11eb-88dd-4b6f2169d7c0.png)
+
+# 文档
+
+Unity UI-Stack-System的使用文档请看[这里]()
