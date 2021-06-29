@@ -56,6 +56,8 @@
      <Compile Include="Assets\Package\Runtime\UIStackManager.cs" />
      <Compile Include="Assets\Scripts\SampleMainPanelElement.cs" />
      <Compile Include="Assets\Scripts\SampleSettingsPanelElement.cs" />
+     <Compile Include="Assets\Scripts\SettingsButtonController.cs" />
+     <Compile Include="Assets\Scripts\CloseButtonController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
