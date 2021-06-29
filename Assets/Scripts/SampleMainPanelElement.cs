@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
+    [AddComponentMenu("FinTOKMAK/UI Stack System/UI Stack Element/Main Panel")]
     public class SampleMainPanelElement : UIPanelElement
     {
         #region Public Field

@@ -15,6 +15,7 @@ namespace FinTOKMAK.UIStackSystem.Runtime
     /// This is the Stack Manager for the UI Stack System
     /// This MonoBehaviour should be attached to every root GameObject of UIPanelElements
     /// </summary>
+    [AddComponentMenu("FinTOKMAK/UI Stack System/UI Stack Manager")]
     public class UIStackManager : MonoBehaviour
     {
         #region Public Field

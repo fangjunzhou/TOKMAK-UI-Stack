@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
+    [AddComponentMenu("FinTOKMAK/UI Stack System/UI Stack Element/Settings Panel")]
     public class SampleSettingsPanelElement : UIPanelElement
     {
         #region Public Methods
@@ -26,10 +27,10 @@ namespace DefaultNamespace
         
         public override void OnPush()
         {
-            base.OnPush();
-            
             // Activate self
             gameObject.SetActive(true);
+            
+            base.OnPush();
         }
 
         public override void OnPop()
@@ -50,10 +51,10 @@ namespace DefaultNamespace
 
         public override void OnResume()
         {
-            base.OnResume();
-            
             // Activate self
             gameObject.SetActive(true);
+            
+            base.OnResume();
         }
 
         #endregion
