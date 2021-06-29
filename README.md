@@ -69,4 +69,4 @@ InitializationPanel是初始化压入的Panel，此Panel必须处于UIPanels中�
 
 # 文档
 
-Unity UI-Stack-System的使用文档请看[这里]()
+Unity UI-Stack-System的使用文档请看[这里](https://fangjun-zhou.github.io/Unity-UI-Stack-System/)
