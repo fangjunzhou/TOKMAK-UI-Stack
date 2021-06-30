@@ -704,6 +704,10 @@
       <Project>{13351461-858e-42e8-e669-ac44a8dc82bf}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="FinTOKMAK.UIStackSystem.Runtime.csproj">
+      <Project>{c40b6529-659c-135a-2097-a9f3d1aacd54}</Project>
+      <Name>FinTOKMAK.UIStackSystem.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.3] - 2021-06-30
+### Fixed
+- Added Assembly Definition
+
 ## [0.0.2] - 2021-06-30
 ### Added
 - Finish LICENSE
@@ -20,5 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Developers can use it to handle panel logic.
 
 [Unreleased]: https://github.com/Fangjun-Zhou/Unity-UI-Stack-System
+[0.0.3]: https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/releases/tag/uistacksystem-0.0.3
 [0.0.2]: https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/releases/tag/uistacksystem-0.0.2
 [0.0.1]: https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/releases/tag/uistacksystem-0.0.1
