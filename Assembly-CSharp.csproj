@@ -52,12 +52,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Package\Runtime\UIPanelElement.cs" />
      <Compile Include="Assets\Package\Runtime\UIStackManager.cs" />
-     <Compile Include="Assets\Scripts\SampleMainPanelElement.cs" />
-     <Compile Include="Assets\Scripts\SampleSettingsPanelElement.cs" />
-     <Compile Include="Assets\Scripts\SettingsButtonController.cs" />
      <Compile Include="Assets\Scripts\CloseButtonController.cs" />
+     <Compile Include="Assets\Package\Runtime\UIPanelElement.cs" />
+     <Compile Include="Assets\Scripts\SampleMainPanelElement.cs" />
+     <Compile Include="Assets\Scripts\SettingsButtonController.cs" />
+     <Compile Include="Assets\Scripts\SampleSettingsPanelElement.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -655,6 +655,12 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="NaughtyAttributes.Editor">
+ <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/NaughtyAttributes.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="NaughtyAttributes.Test">
+ <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/NaughtyAttributes.Test.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -669,6 +675,9 @@
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="NaughtyAttributes.Core">
+ <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -687,15 +696,6 @@
  </Reference>
  <Reference Include="SerializableDict.Editor">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/SerializableDict.Editor.dll</HintPath>
- </Reference>
- <Reference Include="NaughtyAttributes.Editor">
- <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/NaughtyAttributes.Editor.dll</HintPath>
- </Reference>
- <Reference Include="NaughtyAttributes.Test">
- <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/NaughtyAttributes.Test.dll</HintPath>
- </Reference>
- <Reference Include="NaughtyAttributes.Core">
- <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
