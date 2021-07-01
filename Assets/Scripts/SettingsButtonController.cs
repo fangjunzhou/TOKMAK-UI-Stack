@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using FinTOKMAK.UIStackSystem.Runtime;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace DefaultNamespace
 {
@@ -13,6 +16,10 @@ namespace DefaultNamespace
         [BoxGroup("Panel References")]
         [ValidateInput("IsPanelValid", "The panel is not in the UIPanels in panelRootManager.")]
         public UIPanelElement settingsPanel;
+        
+        #endregion
+
+        #region Private Field
 
         #endregion
 
@@ -23,7 +30,7 @@ namespace DefaultNamespace
         /// </summary>
         public void OpenSettingsPanel()
         {
-            rootPanel.panelRootManager.Push(settingsPanel);
+            rootPanel.panelRootManager.AsyncPush(settingsPanel, rootPanel , 0.1f);
         }
 
         #endregion
