@@ -20,17 +20,11 @@ namespace DefaultNamespace
         public override void OnPop()
         {
             base.OnPop();
-            
-            // Deactivate self
-            gameObject.SetActive(false);
         }
 
         public override void OnPause()
         {
             base.OnPause();
-            
-            // Deactivate self
-            gameObject.SetActive(false);
         }
 
         public override void OnResume()
