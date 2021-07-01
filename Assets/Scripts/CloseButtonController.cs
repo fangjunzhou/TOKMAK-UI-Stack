@@ -4,15 +4,8 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class CloseButtonController : MonoBehaviour
+    public class CloseButtonController : UIPanelChild
     {
-        #region Public Field
-        
-        [BoxGroup("Panel References")]
-        [Required]
-        public UIPanelElement currentPanel;
-        
-        #endregion
 
         #region Public Methods
 
@@ -23,9 +16,9 @@ namespace DefaultNamespace
         /// </summary>
         public void CloseSettingsPanelIfOnTop()
         {
-            if (currentPanel.panelRootManager.Peek() == currentPanel)
+            if (rootPanel.panelRootManager.Peek() == rootPanel)
             {
-                currentPanel.panelRootManager.Pop();
+                rootPanel.panelRootManager.Pop();
             }
         }
 
