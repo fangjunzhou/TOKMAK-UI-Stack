@@ -85,6 +85,7 @@ namespace FinTOKMAK.UIStackSystem.Runtime
             if (_UIStack.Count != 0)
             {
                 _UIStack.Peek().OnPause();
+                _UIStack.Peek().OnFinishPause();
             }
             // push the panel into the stack
             _UIStack.Push(panel);
@@ -150,6 +151,8 @@ namespace FinTOKMAK.UIStackSystem.Runtime
                 yield return new WaitForSeconds(checkRate);
             }
             
+            _UIStack.Peek().OnFinishPause();
+            
             // push the panel into the stack
             _UIStack.Push(panel);
             panel.OnPush();
@@ -169,6 +172,7 @@ namespace FinTOKMAK.UIStackSystem.Runtime
 
             UIPanelElement popPanel = _UIStack.Pop();
             popPanel.OnPop();
+            popPanel.OnFinishPop();
             
             // resume the current stack
             UIPanelElement resumePanel = _UIStack.Peek();

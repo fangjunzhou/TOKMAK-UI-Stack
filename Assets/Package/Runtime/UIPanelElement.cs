@@ -11,8 +11,8 @@ namespace FinTOKMAK.UIStackSystem.Runtime
     /// This is the base class for UIPanel
     /// All the UI panel logic class should inherit this class
     /// </summary>
-    [AddComponentMenu("FinTOKMAK/UI Stack System/UI Stack Element Base")]
-    public class UIPanelElement : MonoBehaviour
+    [AddComponentMenu("FinTOKMAK/UI Stack System/UI Panel Element")]
+    public class UIPanelElement : MonoBehaviour, IUIStackEventInvoker
     {
         #region Public Field
 
@@ -28,22 +28,53 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         [Space]
         [BoxGroup("Panel Property")]
         public string panelName;
+        
+        [BoxGroup("UI Finish Listeners")]
+        [ReorderableList]
+        public List<UIStackEventListener> listeners;
 
         [BoxGroup("UI Stack Event")]
         public UnityEvent pushEvent;
         [BoxGroup("UI Stack Event")]
         public UnityEvent popEvent;
         [BoxGroup("UI Stack Event")]
+        public UnityEvent finishPopEvent;
+        [BoxGroup("UI Stack Event")]
         public UnityEvent pauseEvent;
         [BoxGroup("UI Stack Event")]
+        public UnityEvent finishPauseEvent;
+        [BoxGroup("UI Stack Event")]
         public UnityEvent resumeEvent;
-
+        
+        public Action finishAction { get; set; }
         #endregion
 
         private void Awake()
         {
             // By default the panel element should be inactivate
             gameObject.SetActive(false);
+            
+            // initialize listeners
+            foreach (UIStackEventListener listener in listeners)
+            {
+                ((IUIStackEventInvoker) listener.eventInvoker).finishAction += () =>
+                {
+                    // when finish action is triggered
+                    
+                    // set the state to finished
+                    listener.state = true;
+                    // check all the finish state and trigger the FinishAction in the panel
+                    FinishCheck();
+                };
+            }
+        }
+        
+        private void OnEnable()
+        {
+            foreach (UIStackEventListener listener in listeners)
+            {
+                listener.state = false;
+            }
         }
 
         #region UI Stack Callback Methods
@@ -65,6 +96,15 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         }
 
         /// <summary>
+        /// This method will be called when the UIPanelElement finish the pop state
+        /// and new panel will be resumed
+        /// </summary>
+        public virtual void OnFinishPop()
+        {
+            finishPopEvent?.Invoke();
+        }
+
+        /// <summary>
         /// This method will be called when the UIPanelElement is paused
         /// To be specific, when current UIPanelElement is on the top of the UI Stack,
         /// the UIPanelElement is not paused
@@ -74,6 +114,15 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         public virtual void OnPause()
         {
             pauseEvent?.Invoke();
+        }
+
+        /// <summary>
+        /// This method will be called when the UIPanelElement finish the pause state
+        /// and new panel will be pushed into the stack
+        /// </summary>
+        public virtual void OnFinishPause()
+        {
+            finishPauseEvent?.Invoke();
         }
 
         /// <summary>
@@ -87,6 +136,56 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         public virtual void OnResume()
         {
             resumeEvent?.Invoke();
+        }
+
+        #endregion
+
+        #region Public Methods
+
+        /// <summary>
+        /// Check all the listeners' state and trigger the finish event if all the listeners are finished
+        /// </summary>
+        public void FinishCheck()
+        {
+            // if all the UIStackEventListeners are finished, call the finish pause event
+
+            foreach (UIStackEventListener listener in listeners)
+            {
+                if (!listener.state)
+                    return;
+            }
+            
+            finishAction?.Invoke();
+        }
+
+        [Button("UI Active Setup")]
+        public void UIActiveSetup()
+        {
+            UnityAction methodDelegate =
+                System.Delegate.CreateDelegate(typeof(UnityAction), this, "SetGameObjectActive") as UnityAction;
+            UnityEditor.Events.UnityEventTools.AddPersistentListener (pushEvent, methodDelegate);
+            
+            methodDelegate =
+                System.Delegate.CreateDelegate(typeof(UnityAction), this, "SetGameObjectInactive") as UnityAction;
+            UnityEditor.Events.UnityEventTools.AddPersistentListener (finishPopEvent, methodDelegate);
+            
+            methodDelegate =
+                System.Delegate.CreateDelegate(typeof(UnityAction), this, "SetGameObjectInactive") as UnityAction;
+            UnityEditor.Events.UnityEventTools.AddPersistentListener (finishPauseEvent, methodDelegate);
+            
+            methodDelegate =
+                System.Delegate.CreateDelegate(typeof(UnityAction), this, "SetGameObjectActive") as UnityAction;
+            UnityEditor.Events.UnityEventTools.AddPersistentListener (resumeEvent, methodDelegate);
+        }
+
+        public void SetGameObjectActive()
+        {
+            gameObject.SetActive(true);
+        }
+        
+        public void SetGameObjectInactive()
+        {
+            gameObject.SetActive(false);
         }
 
         #endregion
