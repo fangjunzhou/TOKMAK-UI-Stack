@@ -37,8 +37,6 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 
 ## UI Panel Element
 
-![image](https://user-images.githubusercontent.com/79500078/123815643-39b54680-d929-11eb-9423-a2ba0d2cc4f2.png)
-
 UIPanelElement是一个继承自MonoBehavior的子类，也是整个UI Stack System中所有stack-based UI需要继承的基类。
 
 这个类中除了包含一个对调用自身的UI Stack Manager（后文中会介绍）的引用和一个Panel name字段，还有四个UI Stack操作的回调函数。
@@ -48,6 +46,85 @@ UIPanelElement是一个继承自MonoBehavior的子类，也是整个UI Stack Sys
 后文中还会详细介绍这四个关键函数的意义和生命周期中调用他们的过程
 
 除此之外，UIPanelElement基类还提供了四个对应的UnityEvent在对应的生命周期中被调用。
+
+### 示例
+```c#
+public class SampleMainPanelElement : UIPanelElement
+{
+    #region UIPanelElement Callback
+
+    public override void OnPush()
+    {
+        // Activate self
+        gameObject.SetActive(true);
+
+        base.OnPush();
+    }
+
+    public override void OnPop()
+    {
+        base.OnPop();
+
+        // Deactivate self
+        gameObject.SetActive(false);
+    }
+
+    public override void OnPause()
+    {
+        base.OnPause();
+
+        // Deactivate self
+        gameObject.SetActive(false);
+    }
+
+    public override void OnResume()
+    {
+        // Activate self
+        gameObject.SetActive(true);
+
+        base.OnResume();
+    }
+
+    #endregion
+}
+```
+
+![image](https://user-images.githubusercontent.com/79500078/123815643-39b54680-d929-11eb-9423-a2ba0d2cc4f2.png)
+
+## UI Panel Child
+
+处于任意UI Panel内的逻辑都需要继承自UIPanelChild基类。
+
+这个类提供了对父Panel的引用和基础的Panel合法性校验功能
+
+### 示例
+
+```c#
+public class SettingsButtonController : UIPanelChild
+{
+    #region Public Field
+
+    [BoxGroup("Panel References")]
+    [ValidateInput("IsPanelValid", "The panel is not in the UIPanels in panelRootManager.")]
+    public UIPanelElement settingsPanel;
+
+    #endregion
+
+    #region Public Methods
+
+    /// <summary>
+    /// Call this method to open the settings panel in the UI Stack Manager
+    /// </summary>
+    public void OpenSettingsPanel()
+    {
+        rootPanel.panelRootManager.Push(settingsPanel);
+    }
+
+    #endregion
+}
+```
+
+![image](https://user-images.githubusercontent.com/79500078/124051255-ba219780-da4e-11eb-8a93-c97a73b4ecc8.png)
 
 ## UI Stack Manager
 
