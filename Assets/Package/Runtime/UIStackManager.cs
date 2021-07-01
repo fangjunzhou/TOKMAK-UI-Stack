@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
@@ -59,7 +60,7 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         #region UIStack Operation
 
         /// <summary>
-        /// Peek at the UIStack to check the top of UI Stack
+        /// Peek at the UIStack to check the top of UI Stack.
         /// </summary>
         /// <returns></returns>
         public UIPanelElement Peek()
@@ -68,7 +69,7 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         }
 
         /// <summary>
-        /// Push a UIPanelElement into the UIStack
+        /// Push a UIPanelElement into the UIStack.
         /// </summary>
         /// <param name="panel">the panel that need to be pushed into the stack</param>
         public void Push(UIPanelElement panel)
@@ -91,7 +92,71 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         }
 
         /// <summary>
-        /// Pop the panel at the top of the stack
+        /// The Asynchronous way of pushing a panel.
+        /// Uses the AsyncPushHelper.
+        /// </summary>
+        /// <param name="panel">The panel to push.</param>
+        /// <param name="finishPauseAction">The action event that will be called by panel
+        /// when finish the Pause operation.</param>
+        /// <param name="checkRate">the rate of checking pause state</param>
+        public void AsyncPush(UIPanelElement panel, IUIStackEventInvoker invoker, float checkRate)
+        {
+            // Check if the panel is in the UIPanels dictionary
+            if (!UIPanels.ContainsKey(panel))
+            {
+                throw new ArgumentException("The panel is not in the UIPanels dictionary." +
+                                            "Make sure you are using the panel in the dictionary.");
+            }
+            
+            // if there's no element currently in stack, call the normal Push method
+            if (_UIStack.Count == 0)
+            {
+                Push(panel);
+                return;
+            }
+            
+            // Use the Async Push
+            StartCoroutine(AsyncPushHelper(panel, invoker, checkRate));
+        }
+
+        /// <summary>
+        /// The Asynchronous way of pushing a panel.
+        /// Using this method to push will cause the Push operation
+        /// being hold after calling the OnPause of the old panel.
+        ///
+        /// It will wait until the Pause action finish then push the new panel into the stack.
+        /// </summary>
+        /// <param name="panel">The panel to push.</param>
+        /// <param name="finishPauseAction">The action event that will be called by panel
+        /// when finish the Pause operation.</param>
+        /// <param name="checkRate">the rate of checking pause state</param>
+        /// <returns></returns>
+        private IEnumerator AsyncPushHelper(UIPanelElement panel, IUIStackEventInvoker invoker, float checkRate)
+        {
+            // Handle the finish pause event
+            bool finishPause = false;
+            invoker.finishAction += () =>
+            {
+                // Debug.Log("finishPauseEvent async");
+                finishPause = true;
+            };
+            
+            // pause the old panel
+            _UIStack.Peek().OnPause();
+            
+            // wait until the old panel finish pause
+            while (!finishPause)
+            {
+                yield return new WaitForSeconds(checkRate);
+            }
+            
+            // push the panel into the stack
+            _UIStack.Push(panel);
+            panel.OnPush();
+        }
+
+        /// <summary>
+        /// Pop the panel at the top of the stack.
         /// </summary>
         /// <returns>the panel popped out from the stack</returns>
         public UIPanelElement Pop()
