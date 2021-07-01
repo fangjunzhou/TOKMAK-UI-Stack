@@ -56,7 +56,6 @@
      <Compile Include="Assets\Scripts\SampleMainPanelElement.cs" />
      <Compile Include="Assets\Scripts\SettingsButtonController.cs" />
      <Compile Include="Assets\Scripts\SampleSettingsPanelElement.cs" />
-     <Compile Include="Assets\Package\Runtime\UIPanelChild.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -698,13 +697,13 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="FinTOKMAK.UIStackSystem.Runtime.csproj">
-      <Project>{c40b6529-659c-135a-2097-a9f3d1aacd54}</Project>
-      <Name>FinTOKMAK.UIStackSystem.Runtime</Name>
-    </ProjectReference>
     <ProjectReference Include="FinTOKMAK.UIStackSystem.Editor.csproj">
       <Project>{c9a6200b-1608-eb3a-42ac-cc12b7152f57}</Project>
       <Name>FinTOKMAK.UIStackSystem.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FinTOKMAK.UIStackSystem.Runtime.csproj">
+      <Project>{c40b6529-659c-135a-2097-a9f3d1aacd54}</Project>
+      <Name>FinTOKMAK.UIStackSystem.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

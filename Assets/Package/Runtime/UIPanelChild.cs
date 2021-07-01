@@ -7,7 +7,7 @@ namespace FinTOKMAK.UIStackSystem.Runtime
     {
         #region Public Field
 
-        [BoxGroup("Panel References")]
+        [BoxGroup("Root Panel")]
         [Required]
         public UIPanelElement rootPanel;
 
