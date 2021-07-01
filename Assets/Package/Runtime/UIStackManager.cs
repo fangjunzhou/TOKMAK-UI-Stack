@@ -102,13 +102,15 @@ namespace FinTOKMAK.UIStackSystem.Runtime
                 return null;
             }
 
-            UIPanelElement panel = _UIStack.Pop();
-            panel.OnPop();
+            UIPanelElement popPanel = _UIStack.Pop();
+            popPanel.OnPop();
             
             // resume the current stack
-            _UIStack.Peek().OnResume();
+            UIPanelElement resumePanel = _UIStack.Peek();
+            if (resumePanel != null)
+                resumePanel.OnResume();
 
-            return panel;
+            return popPanel;
         }
 
         #endregion
