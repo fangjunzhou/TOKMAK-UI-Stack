@@ -18,7 +18,7 @@ namespace DefaultNamespace
         {
             if (rootPanel.panelRootManager.Peek() == rootPanel)
             {
-                rootPanel.panelRootManager.Pop();
+                rootPanel.panelRootManager.AsyncPop(rootPanel, 0.1f);
             }
         }
 
