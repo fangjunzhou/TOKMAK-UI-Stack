@@ -6,6 +6,8 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 
 除此之外，栈内的每一层UI Panel都可以对栈操作进行响应。基于这一特性，开发者可以让UI Panel在保持执行逻辑代码的前提下隐藏在后台，从而实现非常复杂的UI逻辑开发。
 
+![ui_stack_system_demo_1](https://user-images.githubusercontent.com/79500078/124216225-51a6e900-db28-11eb-8897-ce11543885de.gif)
+
 # 下载
 
 ## 依赖项
