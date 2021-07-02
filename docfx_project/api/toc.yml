@@ -2,10 +2,18 @@
 - uid: FinTOKMAK.UIStackSystem.Runtime
   name: FinTOKMAK.UIStackSystem.Runtime
   items:
+  - uid: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+    name: IUIStackEventInvoker
+  - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelChild
+    name: UIPanelChild
   - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
     name: UIPanelElement
   - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
     name: UIPanelElementStringDict
+  - uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker
+    name: UIStackEventInvoker
+  - uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener
+    name: UIStackEventListener
   - uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
     name: UIStackManager
 - uid: Package.Editor

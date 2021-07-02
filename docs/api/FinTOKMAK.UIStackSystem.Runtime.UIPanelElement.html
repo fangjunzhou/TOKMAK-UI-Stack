@@ -49,10 +49,10 @@
                 
                 <ul class="nav level1 navbar-nav">
                       <li>
-                          <a>Articles</a>
+                          <a href="../articles/intro.html" title="Articles">Articles</a>
                       </li>
                       <li>
-                          <a href="../api/index.md" title="Api Documentation">Api Documentation</a>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
                       </li>
                 </ul>    </div>
           </div>
@@ -86,11 +86,23 @@
                       <a href="FinTOKMAK.UIStackSystem.Runtime.html" title="FinTOKMAK.UIStackSystem.Runtime" class="">FinTOKMAK.UIStackSystem.Runtime</a>
                         
                         <ul class="nav level2">
+                          <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html" title="IUIStackEventInvoker" class="">IUIStackEventInvoker</a>
+                          </li>
+                          <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html" title="UIPanelChild" class="">UIPanelChild</a>
+                          </li>
                           <li class="active">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html" title="UIPanelElement" class="active">UIPanelElement</a>
                           </li>
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict.html" title="UIPanelElementStringDict" class="">UIPanelElementStringDict</a>
+                          </li>
+                          <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html" title="UIStackEventInvoker" class="">UIStackEventInvoker</a>
+                          </li>
+                          <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html" title="UIStackEventListener" class="">UIStackEventListener</a>
                           </li>
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html" title="UIStackManager" class="">UIStackManager</a>
@@ -126,14 +138,90 @@ All the UI panel logic class should inherit this class</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">UIPanelElement</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html">IUIStackEventInvoker</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.html">FinTOKMAK.UIStackSystem.Runtime</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UIPanelElement : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class UIPanelElement : MonoBehaviour, IUIStackEventInvoker</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_finishPauseEvent" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishPauseEvent">finishPauseEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent finishPauseEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_finishPopEvent" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishPopEvent">finishPopEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent finishPopEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_listeners" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.listeners">listeners</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;UIStackEventListener&gt; listeners</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html">UIStackEventListener</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_panelName" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelName">panelName</h4>
@@ -280,8 +368,70 @@ All the UI panel logic class should inherit this class</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_finishAction_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishAction*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_finishAction" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishAction">finishAction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action finishAction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_FinishCheck_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.FinishCheck*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_FinishCheck" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.FinishCheck">FinishCheck()</h4>
+  <div class="markdown level1 summary"><p>Check all the listeners' state and trigger the finish event if all the listeners are finished</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinishCheck()</code></pre>
+  </div>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnFinishPause_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPause*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnFinishPause" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPause">OnFinishPause()</h4>
+  <div class="markdown level1 summary"><p>This method will be called when the UIPanelElement finish the pause state
+and new panel will be pushed into the stack</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnFinishPause()</code></pre>
+  </div>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnFinishPop_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPop*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnFinishPop" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPop">OnFinishPop()</h4>
+  <div class="markdown level1 summary"><p>This method will be called when the UIPanelElement finish the pop state
+and new panel will be resumed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnFinishPop()</code></pre>
+  </div>
   
   
   <a id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnPause_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause*"></a>
@@ -334,6 +484,40 @@ OnResume callback method will be called</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void OnResume()</code></pre>
+  </div>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_SetGameObjectActive_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectActive*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_SetGameObjectActive" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectActive">SetGameObjectActive()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGameObjectActive()</code></pre>
+  </div>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_SetGameObjectInactive_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectInactive*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_SetGameObjectInactive" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectInactive">SetGameObjectInactive()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGameObjectInactive()</code></pre>
+  </div>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_UIActiveSetup_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.UIActiveSetup*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_UIActiveSetup" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.UIActiveSetup">UIActiveSetup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UIActiveSetup()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html">IUIStackEventInvoker</a>
   </div>
 </article>
           </div>

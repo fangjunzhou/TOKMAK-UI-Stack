@@ -5,14 +5,38 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html",
+          "hash": "SN56uN9UJt1XN3O1HkEuRwXeP6WVgRBCtn8MnVsZ17Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html",
+          "hash": "SXz0J03WQ+K/bHAWUl9r8hIP0kNEwKg9/qxerAvnZco="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.yml",
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html",
-          "hash": "BxDCIIpcgmQ4EGiOLMeu6wrHVt8B81+/ule3ULIdvA8="
+          "hash": "0/4Tso4a0lh2Pce8KEDY7oIOndUspJBFpFQe24PBvtg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +45,34 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict.html",
-          "hash": "3fVgW/S51+Msrg0ZcPpr94qHxFFoOn2+r7mLYDBkXt8="
+          "hash": "EKSdHoFS+TpwbA4ARv19mleVhtYy7GBkmfWdoX9BtjA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html",
+          "hash": "J3BrzGurR4B8Nk+pRU1iYkVXNhQ81+XJpZFlr0EAFPY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html",
+          "hash": "KeheVf484HOoqfeRQ/VYnypxpSbf98qR97EuTaBZEvs="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html",
-          "hash": "JMvoKs1JueelAY3teFhR2fGtPB+TbcMgiNP421EMLPc="
+          "hash": "IL4ljpvn4/ZRk8xnC6iFnlZGDCr2NSsVcSnrtUDn7u4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.html",
-          "hash": "TL+hVoJu/tRTRd4IifH2KFf9oI82wuMIflntfX/3fSQ="
+          "hash": "Hj7dpN7h4ZBhVz+OyPPtQ1chf8Rv3dgpP9xfrB+K5+I="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Package.Editor.UIStackManagerCustomEditor.html",
-          "hash": "M2MgcrB5Cjy6AsQ33qLl04szNOFAGDaiaqBNCizcvDw="
+          "hash": "neoNtvtrAElYCrQ6xd6j8fnit+5duEhY2MMHPcVAax0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Package.Editor.html",
-          "hash": "q49wieAI3NC6qChbBEmDY0CZwXJhdJjViI59OW2Gd2Q="
+          "hash": "GwJOtbeWmdcB4sflkjkhQFKXotJ7qYp6DxIMIXglZUQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "pzSdaHuEhXeKLC+uXVyu8Ush3gj7zVWFzo1xQJjXz5M="
+          "hash": "iHHl/3PK9JuMM6fyysqiSRGMgtTQM2ITY4UuyiOPj0A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -108,7 +156,7 @@
           "hash": "ofJhV1EzLFfmw+cs2BPyij13HVqXIwm37EoTYv7RBaE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     }
   ],
@@ -130,8 +178,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 6,
-          "skipped_file_count": 6
+          "total_file_count": 10,
+          "skipped_file_count": 1
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

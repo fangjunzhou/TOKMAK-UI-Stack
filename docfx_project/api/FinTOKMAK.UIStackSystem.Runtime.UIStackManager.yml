@@ -5,6 +5,8 @@ items:
   id: UIStackManager
   parent: FinTOKMAK.UIStackSystem.Runtime
   children:
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop(FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement,FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
   - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.initializationPanel
   - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek
   - FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop
@@ -21,7 +23,7 @@ items:
   source:
     id: UIStackManager
     path: ''
-    startLine: 280
+    startLine: 482
   assemblies:
   - cs.temp.dll
   namespace: FinTOKMAK.UIStackSystem.Runtime
@@ -31,7 +33,6 @@ items:
     content: 'public class UIStackManager : MonoBehaviour'
     content.vb: >-
       Public Class UIStackManager
-
           Inherits MonoBehaviour
   inheritance:
   - System.Object
@@ -55,7 +56,7 @@ items:
   source:
     id: UIPanels
     path: ''
-    startLine: 290
+    startLine: 492
   assemblies:
   - cs.temp.dll
   namespace: FinTOKMAK.UIStackSystem.Runtime
@@ -84,7 +85,7 @@ items:
   source:
     id: useInitializePanel
     path: ''
-    startLine: 295
+    startLine: 497
   assemblies:
   - cs.temp.dll
   namespace: FinTOKMAK.UIStackSystem.Runtime
@@ -113,7 +114,7 @@ items:
   source:
     id: initializationPanel
     path: ''
-    startLine: 300
+    startLine: 502
   assemblies:
   - cs.temp.dll
   namespace: FinTOKMAK.UIStackSystem.Runtime
@@ -142,11 +143,11 @@ items:
   source:
     id: Peek
     path: ''
-    startLine: 327
+    startLine: 529
   assemblies:
   - cs.temp.dll
   namespace: FinTOKMAK.UIStackSystem.Runtime
-  summary: "\nPeek at the UIStack to check the top of UI Stack\n"
+  summary: "\nPeek at the UIStack to check the top of UI Stack.\n"
   example: []
   syntax:
     content: public UIPanelElement Peek()
@@ -173,11 +174,11 @@ items:
   source:
     id: Push
     path: ''
-    startLine: 336
+    startLine: 538
   assemblies:
   - cs.temp.dll
   namespace: FinTOKMAK.UIStackSystem.Runtime
-  summary: "\nPush a UIPanelElement into the UIStack\n"
+  summary: "\nPush a UIPanelElement into the UIStack.\n"
   example: []
   syntax:
     content: public void Push(UIPanelElement panel)
@@ -187,6 +188,43 @@ items:
       description: the panel that need to be pushed into the stack
     content.vb: Public Sub Push(panel As UIPanelElement)
   overload: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement,FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement,FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  id: AsyncPush(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement,FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  langs:
+  - csharp
+  - vb
+  name: AsyncPush(UIPanelElement, IUIStackEventInvoker, Single)
+  nameWithType: UIStackManager.AsyncPush(UIPanelElement, IUIStackEventInvoker, Single)
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement, FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker, System.Single)
+  type: Method
+  source:
+    id: AsyncPush
+    path: ''
+    startLine: 566
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThe Asynchronous way of pushing a panel.\nUses the AsyncPushHelper.\n"
+  example: []
+  syntax:
+    content: public void AsyncPush(UIPanelElement panel, IUIStackEventInvoker invoker, float checkRate)
+    parameters:
+    - id: panel
+      type: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+      description: The panel to push.
+    - id: invoker
+      type: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+    - id: checkRate
+      type: System.Single
+      description: the rate of checking pause state
+    content.vb: Public Sub AsyncPush(panel As UIPanelElement, invoker As IUIStackEventInvoker, checkRate As Single)
+  overload: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -205,11 +243,11 @@ items:
   source:
     id: Pop
     path: ''
-    startLine: 359
+    startLine: 628
   assemblies:
   - cs.temp.dll
   namespace: FinTOKMAK.UIStackSystem.Runtime
-  summary: "\nPop the panel at the top of the stack\n"
+  summary: "\nPop the panel at the top of the stack.\n"
   example: []
   syntax:
     content: public UIPanelElement Pop()
@@ -222,12 +260,66 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop(FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop(FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  id: AsyncPop(FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  parent: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
+  langs:
+  - csharp
+  - vb
+  name: AsyncPop(IUIStackEventInvoker, Single)
+  nameWithType: UIStackManager.AsyncPop(IUIStackEventInvoker, Single)
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop(FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker, System.Single)
+  type: Method
+  source:
+    id: AsyncPop
+    path: ''
+    startLine: 656
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThe asynchronous way of popping a panel.\nUse the AsyncPopHelper\n"
+  example: []
+  syntax:
+    content: public UIPanelElement AsyncPop(IUIStackEventInvoker invoker, float checkRate)
+    parameters:
+    - id: invoker
+      type: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+      description: >-
+        The action event that will be called by panel
+
+        when finish the Pause operation.
+    - id: checkRate
+      type: System.Single
+      description: the rate of checking pause state
+    return:
+      type: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+      description: ''
+    content.vb: Public Function AsyncPop(invoker As IUIStackEventInvoker, checkRate As Single) As UIPanelElement
+  overload: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
 - uid: FinTOKMAK.UIStackSystem.Runtime
   commentId: N:FinTOKMAK.UIStackSystem.Runtime
   name: FinTOKMAK.UIStackSystem.Runtime
   nameWithType: FinTOKMAK.UIStackSystem.Runtime
   fullName: FinTOKMAK.UIStackSystem.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
   commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
   parent: FinTOKMAK.UIStackSystem.Runtime
@@ -241,12 +333,6 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
   commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
   parent: FinTOKMAK.UIStackSystem.Runtime
@@ -263,8 +349,31 @@ references:
   name: Push
   nameWithType: UIStackManager.Push
   fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush
+  name: AsyncPush
+  nameWithType: UIStackManager.AsyncPush
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush
+- uid: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  parent: FinTOKMAK.UIStackSystem.Runtime
+  name: IUIStackEventInvoker
+  nameWithType: IUIStackEventInvoker
+  fullName: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop*
   commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop
   name: Pop
   nameWithType: UIStackManager.Pop
   fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop
+  name: AsyncPop
+  nameWithType: UIStackManager.AsyncPop
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop

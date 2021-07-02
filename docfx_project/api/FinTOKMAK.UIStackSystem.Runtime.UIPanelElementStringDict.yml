@@ -15,7 +15,7 @@ items:
   source:
     id: UIPanelElementStringDict
     path: ''
-    startLine: 273
+    startLine: 475
   assemblies:
   - cs.temp.dll
   namespace: FinTOKMAK.UIStackSystem.Runtime
@@ -30,7 +30,6 @@ items:
       <Serializable>
 
       Public Class UIPanelElementStringDict
-
           Inherits SerializableDictionary(Of UIPanelElement, String)
   inheritance:
   - System.Object
@@ -50,3 +49,16 @@ references:
   name: FinTOKMAK.UIStackSystem.Runtime
   nameWithType: FinTOKMAK.UIStackSystem.Runtime
   fullName: FinTOKMAK.UIStackSystem.Runtime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

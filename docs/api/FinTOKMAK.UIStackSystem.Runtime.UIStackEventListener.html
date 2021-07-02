@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace FinTOKMAK.UIStackSystem.Runtime
+    <title>Class UIStackEventListener
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace FinTOKMAK.UIStackSystem.Runtime
+    <meta name="title" content="Class UIStackEventListener
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -81,9 +81,9 @@
                 <div class="toc" id="toc">
                   
                   <ul class="nav level1">
-                    <li class="active">
+                    <li class="">
                       <span class="expand-stub"></span>
-                      <a href="FinTOKMAK.UIStackSystem.Runtime.html" title="FinTOKMAK.UIStackSystem.Runtime" class="active">FinTOKMAK.UIStackSystem.Runtime</a>
+                      <a href="FinTOKMAK.UIStackSystem.Runtime.html" title="FinTOKMAK.UIStackSystem.Runtime" class="">FinTOKMAK.UIStackSystem.Runtime</a>
                         
                         <ul class="nav level2">
                           <li class="">
@@ -101,8 +101,8 @@
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html" title="UIStackEventInvoker" class="">UIStackEventInvoker</a>
                           </li>
-                          <li class="">
-                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html" title="UIStackEventListener" class="">UIStackEventListener</a>
+                          <li class="active">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html" title="UIStackEventListener" class="active">UIStackEventListener</a>
                           </li>
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html" title="UIStackManager" class="">UIStackManager</a>
@@ -124,38 +124,103 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FinTOKMAK.UIStackSystem.Runtime">
+            <article class="content wrap" id="_content" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener">
   
-  <h1 id="FinTOKMAK_UIStackSystem_Runtime" data-uid="FinTOKMAK.UIStackSystem.Runtime" class="text-break">Namespace FinTOKMAK.UIStackSystem.Runtime
+  
+  <h1 id="FinTOKMAK_UIStackSystem_Runtime_UIStackEventListener" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener" class="text-break">Class UIStackEventListener
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The UI Stack Listener</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UIStackEventListener</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.html">FinTOKMAK.UIStackSystem.Runtime</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="FinTOKMAK_UIStackSystem_Runtime_UIStackEventListener_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class UIStackEventListener</code></pre>
+  </div>
+  <h3 id="fields">Fields
   </h3>
-      <h4><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html">UIPanelChild</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html">UIPanelElement</a></h4>
-      <section><p>This is the base class for UIPanel
-All the UI panel logic class should inherit this class</p>
-</section>
-      <h4><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict.html">UIPanelElementStringDict</a></h4>
-      <section><p>The SerializableDictionary that has int value as keys and UIPanelElements as values</p>
-</section>
-      <h4><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html">UIStackEventInvoker</a></h4>
-      <section></section>
-      <h4><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html">UIStackEventListener</a></h4>
-      <section><p>The UI Stack Listener</p>
-</section>
-      <h4><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html">UIStackManager</a></h4>
-      <section><p>This is the Stack Manager for the UI Stack System
-This MonoBehaviour should be attached to every root GameObject of UIPanelElements</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html">IUIStackEventInvoker</a></h4>
-      <section><p>The interface that provide the finishAction access</p>
-</section>
+  
+  
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIStackEventListener_eventInvoker" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.eventInvoker">eventInvoker</h4>
+  <div class="markdown level1 summary"><p>The event invoker on the UI element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MonoBehaviour eventInvoker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MonoBehaviour</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIStackEventListener_state" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.state">state</h4>
+  <div class="markdown level1 summary"><p>The state of the listener.
+Finished is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool state</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

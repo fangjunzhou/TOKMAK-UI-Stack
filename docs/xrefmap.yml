@@ -7,12 +7,113 @@ references:
   commentId: N:FinTOKMAK.UIStackSystem.Runtime
   fullName: FinTOKMAK.UIStackSystem.Runtime
   nameWithType: FinTOKMAK.UIStackSystem.Runtime
+- uid: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  name: IUIStackEventInvoker
+  href: api/FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  fullName: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  nameWithType: IUIStackEventInvoker
+- uid: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  name: finishAction
+  href: api/FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html#FinTOKMAK_UIStackSystem_Runtime_IUIStackEventInvoker_finishAction
+  commentId: P:FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  fullName: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  nameWithType: IUIStackEventInvoker.finishAction
+- uid: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction*
+  name: finishAction
+  href: api/FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html#FinTOKMAK_UIStackSystem_Runtime_IUIStackEventInvoker_finishAction_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  nameWithType: IUIStackEventInvoker.finishAction
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelChild
+  name: UIPanelChild
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelChild
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelChild
+  nameWithType: UIPanelChild
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.rootPanel
+  name: rootPanel
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelChild_rootPanel
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.rootPanel
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.rootPanel
+  nameWithType: UIPanelChild.rootPanel
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
   name: UIPanelElement
   href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html
   commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
   fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
   nameWithType: UIPanelElement
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishAction
+  name: finishAction
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_finishAction
+  commentId: P:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishAction
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishAction
+  nameWithType: UIPanelElement.finishAction
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishAction*
+  name: finishAction
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_finishAction_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishAction
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishAction
+  nameWithType: UIPanelElement.finishAction
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.FinishCheck
+  name: FinishCheck()
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_FinishCheck
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.FinishCheck
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.FinishCheck()
+  nameWithType: UIPanelElement.FinishCheck()
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.FinishCheck*
+  name: FinishCheck
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_FinishCheck_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.FinishCheck
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.FinishCheck
+  nameWithType: UIPanelElement.FinishCheck
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishPauseEvent
+  name: finishPauseEvent
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_finishPauseEvent
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishPauseEvent
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishPauseEvent
+  nameWithType: UIPanelElement.finishPauseEvent
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishPopEvent
+  name: finishPopEvent
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_finishPopEvent
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishPopEvent
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.finishPopEvent
+  nameWithType: UIPanelElement.finishPopEvent
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.listeners
+  name: listeners
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_listeners
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.listeners
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.listeners
+  nameWithType: UIPanelElement.listeners
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPause
+  name: OnFinishPause()
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnFinishPause
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPause
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPause()
+  nameWithType: UIPanelElement.OnFinishPause()
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPause*
+  name: OnFinishPause
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnFinishPause_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPause
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPause
+  nameWithType: UIPanelElement.OnFinishPause
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPop
+  name: OnFinishPop()
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnFinishPop
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPop
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPop()
+  nameWithType: UIPanelElement.OnFinishPop()
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPop*
+  name: OnFinishPop
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnFinishPop_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPop
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnFinishPop
+  nameWithType: UIPanelElement.OnFinishPop
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.OnPause
   name: OnPause()
   href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_OnPause
@@ -101,18 +202,133 @@ references:
   commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.resumeEvent
   fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.resumeEvent
   nameWithType: UIPanelElement.resumeEvent
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectActive
+  name: SetGameObjectActive()
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_SetGameObjectActive
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectActive
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectActive()
+  nameWithType: UIPanelElement.SetGameObjectActive()
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectActive*
+  name: SetGameObjectActive
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_SetGameObjectActive_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectActive
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectActive
+  nameWithType: UIPanelElement.SetGameObjectActive
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectInactive
+  name: SetGameObjectInactive()
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_SetGameObjectInactive
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectInactive
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectInactive()
+  nameWithType: UIPanelElement.SetGameObjectInactive()
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectInactive*
+  name: SetGameObjectInactive
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_SetGameObjectInactive_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectInactive
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.SetGameObjectInactive
+  nameWithType: UIPanelElement.SetGameObjectInactive
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.UIActiveSetup
+  name: UIActiveSetup()
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_UIActiveSetup
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.UIActiveSetup
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.UIActiveSetup()
+  nameWithType: UIPanelElement.UIActiveSetup()
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.UIActiveSetup*
+  name: UIActiveSetup
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_UIActiveSetup_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.UIActiveSetup
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.UIActiveSetup
+  nameWithType: UIPanelElement.UIActiveSetup
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
   name: UIPanelElementStringDict
   href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict.html
   commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
   fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
   nameWithType: UIPanelElementStringDict
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker
+  name: UIStackEventInvoker
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker
+  nameWithType: UIStackEventInvoker
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.Finish
+  name: Finish()
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html#FinTOKMAK_UIStackSystem_Runtime_UIStackEventInvoker_Finish
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.Finish
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.Finish()
+  nameWithType: UIStackEventInvoker.Finish()
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.Finish*
+  name: Finish
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html#FinTOKMAK_UIStackSystem_Runtime_UIStackEventInvoker_Finish_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.Finish
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.Finish
+  nameWithType: UIStackEventInvoker.Finish
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.finishAction
+  name: finishAction
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html#FinTOKMAK_UIStackSystem_Runtime_UIStackEventInvoker_finishAction
+  commentId: P:FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.finishAction
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.finishAction
+  nameWithType: UIStackEventInvoker.finishAction
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.finishAction*
+  name: finishAction
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html#FinTOKMAK_UIStackSystem_Runtime_UIStackEventInvoker_finishAction_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.finishAction
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.finishAction
+  nameWithType: UIStackEventInvoker.finishAction
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener
+  name: UIStackEventListener
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener
+  nameWithType: UIStackEventListener
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.eventInvoker
+  name: eventInvoker
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html#FinTOKMAK_UIStackSystem_Runtime_UIStackEventListener_eventInvoker
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.eventInvoker
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.eventInvoker
+  nameWithType: UIStackEventListener.eventInvoker
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.state
+  name: state
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html#FinTOKMAK_UIStackSystem_Runtime_UIStackEventListener_state
+  commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.state
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.state
+  nameWithType: UIStackEventListener.state
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
   name: UIStackManager
   href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html
   commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIStackManager
   fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager
   nameWithType: UIStackManager
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop(FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  name: AsyncPop(IUIStackEventInvoker, Single)
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html#FinTOKMAK_UIStackSystem_Runtime_UIStackManager_AsyncPop_FinTOKMAK_UIStackSystem_Runtime_IUIStackEventInvoker_System_Single_
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop(FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop(FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker, System.Single)
+  nameWithType: UIStackManager.AsyncPop(IUIStackEventInvoker, Single)
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop*
+  name: AsyncPop
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html#FinTOKMAK_UIStackSystem_Runtime_UIStackManager_AsyncPop_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop
+  nameWithType: UIStackManager.AsyncPop
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement,FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  name: AsyncPush(UIPanelElement, IUIStackEventInvoker, Single)
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html#FinTOKMAK_UIStackSystem_Runtime_UIStackManager_AsyncPush_FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_FinTOKMAK_UIStackSystem_Runtime_IUIStackEventInvoker_System_Single_
+  commentId: M:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement,FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement, FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker, System.Single)
+  nameWithType: UIStackManager.AsyncPush(UIPanelElement, IUIStackEventInvoker, Single)
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush*
+  name: AsyncPush
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html#FinTOKMAK_UIStackSystem_Runtime_UIStackManager_AsyncPush_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush
+  nameWithType: UIStackManager.AsyncPush
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIStackManager.initializationPanel
   name: initializationPanel
   href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html#FinTOKMAK_UIStackSystem_Runtime_UIStackManager_initializationPanel

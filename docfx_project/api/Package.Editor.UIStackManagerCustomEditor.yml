@@ -24,7 +24,6 @@ items:
     content: 'public class UIStackManagerCustomEditor : UnityEditor.Editor'
     content.vb: >-
       Public Class UIStackManagerCustomEditor
-
           Inherits UnityEditor.Editor
   inheritance:
   - System.Object
@@ -68,6 +67,19 @@ references:
   name: Package.Editor
   nameWithType: Package.Editor
   fullName: Package.Editor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: Package.Editor.UIStackManagerCustomEditor.OnInspectorGUI*
   commentId: Overload:Package.Editor.UIStackManagerCustomEditor.OnInspectorGUI
   name: OnInspectorGUI

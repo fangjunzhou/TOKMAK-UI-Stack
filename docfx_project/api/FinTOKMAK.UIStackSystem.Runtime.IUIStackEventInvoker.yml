@@ -1,0 +1,87 @@
+### YamlMime:ManagedReference
+items:
+- uid: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  id: IUIStackEventInvoker
+  parent: FinTOKMAK.UIStackSystem.Runtime
+  children:
+  - FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  langs:
+  - csharp
+  - vb
+  name: IUIStackEventInvoker
+  nameWithType: IUIStackEventInvoker
+  fullName: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  type: Interface
+  source:
+    id: IUIStackEventInvoker
+    path: ''
+    startLine: 176
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThe interface that provide the finishAction access\n"
+  example: []
+  syntax:
+    content: public interface IUIStackEventInvoker
+    content.vb: Public Interface IUIStackEventInvoker
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  commentId: P:FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  id: finishAction
+  parent: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  langs:
+  - csharp
+  - vb
+  name: finishAction
+  nameWithType: IUIStackEventInvoker.finishAction
+  fullName: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  type: Property
+  source:
+    id: finishAction
+    path: ''
+    startLine: 181
+  assemblies:
+  - cs.temp.dll
+  namespace: FinTOKMAK.UIStackSystem.Runtime
+  summary: "\nThe finish action\n"
+  example: []
+  syntax:
+    content: Action finishAction { get; set; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Property finishAction As Action
+  overload: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: FinTOKMAK.UIStackSystem.Runtime
+  commentId: N:FinTOKMAK.UIStackSystem.Runtime
+  name: FinTOKMAK.UIStackSystem.Runtime
+  nameWithType: FinTOKMAK.UIStackSystem.Runtime
+  fullName: FinTOKMAK.UIStackSystem.Runtime
+- uid: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction*
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+  name: finishAction
+  nameWithType: IUIStackEventInvoker.finishAction
+  fullName: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.finishAction
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

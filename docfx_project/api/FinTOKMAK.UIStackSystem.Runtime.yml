@@ -4,8 +4,12 @@ items:
   commentId: N:FinTOKMAK.UIStackSystem.Runtime
   id: FinTOKMAK.UIStackSystem.Runtime
   children:
+  - FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  - FinTOKMAK.UIStackSystem.Runtime.UIPanelChild
   - FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
   - FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker
+  - FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener
   - FinTOKMAK.UIStackSystem.Runtime.UIStackManager
   langs:
   - csharp
@@ -17,12 +21,33 @@ items:
   assemblies:
   - cs.temp.dll
 references:
+- uid: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+  parent: FinTOKMAK.UIStackSystem.Runtime
+  name: IUIStackEventInvoker
+  nameWithType: IUIStackEventInvoker
+  fullName: FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelChild
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelChild
+  name: UIPanelChild
+  nameWithType: UIPanelChild
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelChild
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
   commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
   parent: FinTOKMAK.UIStackSystem.Runtime
   name: UIPanelElement
   nameWithType: UIPanelElement
   fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker
+  name: UIStackEventInvoker
+  nameWithType: UIStackEventInvoker
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener
+  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener
+  name: UIStackEventListener
+  nameWithType: UIStackEventListener
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
   commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
   parent: FinTOKMAK.UIStackSystem.Runtime

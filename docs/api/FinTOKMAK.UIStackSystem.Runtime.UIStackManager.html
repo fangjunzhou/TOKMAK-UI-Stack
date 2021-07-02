@@ -49,10 +49,10 @@
                 
                 <ul class="nav level1 navbar-nav">
                       <li>
-                          <a>Articles</a>
+                          <a href="../articles/intro.html" title="Articles">Articles</a>
                       </li>
                       <li>
-                          <a href="../api/index.md" title="Api Documentation">Api Documentation</a>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
                       </li>
                 </ul>    </div>
           </div>
@@ -87,10 +87,22 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html" title="IUIStackEventInvoker" class="">IUIStackEventInvoker</a>
+                          </li>
+                          <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html" title="UIPanelChild" class="">UIPanelChild</a>
+                          </li>
+                          <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html" title="UIPanelElement" class="">UIPanelElement</a>
                           </li>
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict.html" title="UIPanelElementStringDict" class="">UIPanelElementStringDict</a>
+                          </li>
+                          <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html" title="UIStackEventInvoker" class="">UIStackEventInvoker</a>
+                          </li>
+                          <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html" title="UIStackEventListener" class="">UIStackEventListener</a>
                           </li>
                           <li class="active">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html" title="UIStackManager" class="active">UIStackManager</a>
@@ -213,9 +225,102 @@ This MonoBehaviour should be attached to every root GameObject of UIPanelElement
   </h3>
   
   
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_AsyncPop_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_AsyncPop_FinTOKMAK_UIStackSystem_Runtime_IUIStackEventInvoker_System_Single_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPop(FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)">AsyncPop(IUIStackEventInvoker, Single)</h4>
+  <div class="markdown level1 summary"><p>The asynchronous way of popping a panel.
+Use the AsyncPopHelper</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIPanelElement AsyncPop(IUIStackEventInvoker invoker, float checkRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html">IUIStackEventInvoker</a></td>
+        <td><span class="parametername">invoker</span></td>
+        <td><p>The action event that will be called by panel
+when finish the Pause operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">checkRate</span></td>
+        <td><p>the rate of checking pause state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html">UIPanelElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_AsyncPush_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_AsyncPush_FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_FinTOKMAK_UIStackSystem_Runtime_IUIStackEventInvoker_System_Single_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.AsyncPush(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement,FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker,System.Single)">AsyncPush(UIPanelElement, IUIStackEventInvoker, Single)</h4>
+  <div class="markdown level1 summary"><p>The Asynchronous way of pushing a panel.
+Uses the AsyncPushHelper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AsyncPush(UIPanelElement panel, IUIStackEventInvoker invoker, float checkRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html">UIPanelElement</a></td>
+        <td><span class="parametername">panel</span></td>
+        <td><p>The panel to push.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html">IUIStackEventInvoker</a></td>
+        <td><span class="parametername">invoker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">checkRate</span></td>
+        <td><p>the rate of checking pause state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_Peek_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek*"></a>
   <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_Peek" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Peek">Peek()</h4>
-  <div class="markdown level1 summary"><p>Peek at the UIStack to check the top of UI Stack</p>
+  <div class="markdown level1 summary"><p>Peek at the UIStack to check the top of UI Stack.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -241,7 +346,7 @@ This MonoBehaviour should be attached to every root GameObject of UIPanelElement
   
   <a id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_Pop_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop*"></a>
   <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_Pop" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Pop">Pop()</h4>
-  <div class="markdown level1 summary"><p>Pop the panel at the top of the stack</p>
+  <div class="markdown level1 summary"><p>Pop the panel at the top of the stack.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -268,7 +373,7 @@ This MonoBehaviour should be attached to every root GameObject of UIPanelElement
   
   <a id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_Push_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push*"></a>
   <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIStackManager_Push_FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIStackManager.Push(FinTOKMAK.UIStackSystem.Runtime.UIPanelElement)">Push(UIPanelElement)</h4>
-  <div class="markdown level1 summary"><p>Push a UIPanelElement into the UIStack</p>
+  <div class="markdown level1 summary"><p>Push a UIPanelElement into the UIStack.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
