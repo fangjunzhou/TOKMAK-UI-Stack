@@ -41,6 +41,10 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 
 Unity UI-Stack-System的使用文档请看[这里](https://fangjun-zhou.github.io/Unity-UI-Stack-System/)
 
+# 更新日志
+
+[CHANGELOG](https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/blob/main/Assets/Package/CHANGELOG.md)
+
 # 使用
 
 ## UI Panel Element
