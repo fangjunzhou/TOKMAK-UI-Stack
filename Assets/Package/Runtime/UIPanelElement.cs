@@ -93,6 +93,9 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         public virtual void OnPop()
         {
             popEvent?.Invoke();
+            
+            // Check the finish event
+            FinishCheck();
         }
 
         /// <summary>
@@ -114,6 +117,9 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         public virtual void OnPause()
         {
             pauseEvent?.Invoke();
+            
+            // Check the finish event
+            FinishCheck();
         }
 
         /// <summary>
