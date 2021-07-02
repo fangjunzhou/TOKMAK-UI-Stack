@@ -35,63 +35,41 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 "com.fintokmak.uistacksystem": "https://github.com/Fangjun-Zhou/Unity-UI-Stack-System.git#upm-uistacksystem"
 ```
 
+# 文档
+
+Unity UI-Stack-System的使用文档请看[这里](https://fangjun-zhou.github.io/Unity-UI-Stack-System/)
+
 # 使用
 
 ## UI Panel Element
 
-UIPanelElement是一个继承自MonoBehavior的子类，也是整个UI Stack System中所有stack-based UI需要继承的基类。
+所有需要被UI Stack接管的Panel都需要挂载UIPanelElement
 
-这个类中除了包含一个对调用自身的UI Stack Manager（后文中会介绍）的引用和一个Panel name字段，还有四个UI Stack操作的回调函数。
+### Panel事件
 
-这四个函数分别是`OnPush`, `OnPop`, `OnPause`, `OnResume`。
+UIPanelElement中除了包含一个对调用自身的UI Stack Manager（后文中会介绍）的引用和一个Panel name字段，还有六个UI Stack操作的回调函数及对应的Unity Event。
 
-后文中还会详细介绍这四个关键函数的意义和生命周期中调用他们的过程
+这六个事件分别是`OnPush`, `OnPop`, `OnFinishPop`, `OnPause`, `OnFinishPause`, `OnResume`。
 
-除此之外，UIPanelElement基类还提供了四个对应的UnityEvent在对应的生命周期中被调用。
+后文中还会详细介绍这六个关键事件的意义和生命周期中调用他们的过程
+
+### UIFinishListeners
+
+UIPanelElement中有一个UIStackEventListener列表字段
+
+这个列表中储存了一系列UIStackEventInvoker。这些Invoker需要被挂载到具有退出动画的UI对象上，在完成动画时，UI对象需要通过脚本或者AnimationEvent（如果你没有使用DOTween）调用EventInvoker中的完成事件。
+
+UIPanelElement会在列表中的所有UI完成退出动画后才释放挂起状态，这一逻辑也会在后文中介绍。
 
 ### 示例
-```c#
-public class SampleMainPanelElement : UIPanelElement
-{
-    #region UIPanelElement Callback
 
-    public override void OnPush()
-    {
-        // Activate self
-        gameObject.SetActive(true);
+通过Unity Event SetActive面板
 
-        base.OnPush();
-    }
+![image](https://user-images.githubusercontent.com/79500078/124213844-de9b7380-db23-11eb-9cf2-3b9574dcb618.png)
 
-    public override void OnPop()
-    {
-        base.OnPop();
+通过事件监听机制触发和释放栈操作挂起状态
 
-        // Deactivate self
-        gameObject.SetActive(false);
-    }
-
-    public override void OnPause()
-    {
-        base.OnPause();
-
-        // Deactivate self
-        gameObject.SetActive(false);
-    }
-
-    public override void OnResume()
-    {
-        // Activate self
-        gameObject.SetActive(true);
-
-        base.OnResume();
-    }
-
-    #endregion
-}
-```
-
-![image](https://user-images.githubusercontent.com/79500078/123815643-39b54680-d929-11eb-9423-a2ba0d2cc4f2.png)
+![image](https://user-images.githubusercontent.com/79500078/124214522-eb6c9700-db24-11eb-8894-9f7d91d43717.png)
 
 ## UI Panel Child
 
@@ -126,11 +104,11 @@ public class SettingsButtonController : UIPanelChild
 }
 ```
 
-![image](https://user-images.githubusercontent.com/79500078/124051255-ba219780-da4e-11eb-8a93-c97a73b4ecc8.png)
+![image](https://user-images.githubusercontent.com/79500078/124214608-13f49100-db25-11eb-8f07-3aa242409767.png)
 
 ## UI Stack Manager
 
-![image](https://user-images.githubusercontent.com/79500078/123814907-a9770180-d928-11eb-9ece-3fd425de3a66.png)
+![image](https://user-images.githubusercontent.com/79500078/124214644-2078e980-db25-11eb-90a9-f0fd51f52381.png)
 
 UIStackManager是UI Stack System的核心组件，这个组件通过一个StackADT对其所有子面板进行管理。
 
@@ -140,12 +118,44 @@ HasInitializePanel控制UI Stack Manager的初始化Panel。当取消勾选时�
 
 InitializationPanel是初始化压入的Panel，此Panel必须处于UIPanels中才可以被调用
 
+## UI Stack Event Invoker
+
+所有涉及到退出动画的UI都需要挂载UIStackEventInvoker.
+
+UIStackEventInvoker中的Finish函数需要在动画完成的时候调用。Panel通过对所有Invoker的监听，可以在最后一个动画播放完成后完成等待挂起并退出。
+
+### 示例
+
+```c#
+public class UIStackEventInvoker : MonoBehaviour, IUIStackEventInvoker
+{
+    public Action finishAction { get; set; }
+
+    #region Public Methods
+
+    /// <summary>
+    /// Call this method when teh UI finished animation or logic
+    /// </summary>
+    public void Finish()
+    {
+        finishAction?.Invoke();
+    }
+
+    #endregion
+}
+```
+
+挂载Invoker的UI
+
+![image](https://user-images.githubusercontent.com/79500078/124215027-d80dfb80-db25-11eb-8327-8aae42d401ce.png)
+
+通过动画事件调用
+
+![image](https://user-images.githubusercontent.com/79500078/124215107-fd9b0500-db25-11eb-9efe-a80b17d1d1ac.png)
+
+![image](https://user-images.githubusercontent.com/79500078/124215152-13102f00-db26-11eb-8808-f2fe8e3782e8.png)
+
 ## UI Stack 生命周期
 
-![image](https://user-images.githubusercontent.com/79500078/123818674-c2cd7d00-d92b-11eb-84bd-96b6a2f625bf.png)
+[UI Stack System生命周期.pdf](https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/files/6751850/UI.Stack.System.pdf)
 
-![image](https://user-images.githubusercontent.com/79500078/123818459-9580cf00-d92b-11eb-88dd-4b6f2169d7c0.png)
-
-# 文档
-
-Unity UI-Stack-System的使用文档请看[这里](https://fangjun-zhou.github.io/Unity-UI-Stack-System/)
