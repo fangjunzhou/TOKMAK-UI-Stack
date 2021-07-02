@@ -128,7 +128,7 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         /// It will wait until the Pause action finish then push the new panel into the stack.
         /// </summary>
         /// <param name="panel">The panel to push.</param>
-        /// <param name="finishPauseAction">The action event that will be called by panel
+        /// <param name="invoker">The action event that will be called by panel
         /// when finish the Pause operation.</param>
         /// <param name="checkRate">the rate of checking pause state</param>
         /// <returns></returns>
@@ -180,6 +180,64 @@ namespace FinTOKMAK.UIStackSystem.Runtime
                 resumePanel.OnResume();
 
             return popPanel;
+        }
+
+        /// <summary>
+        /// The asynchronous way of popping a panel.
+        /// Use the AsyncPopHelper
+        /// </summary>
+        /// <param name="invoker">The action event that will be called by panel
+        /// when finish the Pause operation.</param>
+        /// <param name="checkRate">the rate of checking pause state</param>
+        /// <returns></returns>
+        public UIPanelElement AsyncPop(IUIStackEventInvoker invoker, float checkRate)
+        {
+            // Check if the UIStack is empty
+            if (_UIStack.Count == 0)
+            {
+                return null;
+            }
+
+            StartCoroutine(AsyncPopHelper(invoker, checkRate));
+
+            return _UIStack.Peek();
+        }
+
+        /// <summary>
+        /// The asynchronous way of popping a panel.
+        /// Using this method will cause the OnResume method being hold
+        /// after OnPop the old panel.
+        /// </summary>
+        /// <param name="invoker">The action event that will be called by panel
+        /// when finish the Pause operation.</param>
+        /// <param name="checkRate">the rate of checking pause state</param>
+        /// <returns></returns>
+        private IEnumerator AsyncPopHelper(IUIStackEventInvoker invoker, float checkRate)
+        {
+            // Handle the finish pause event
+            bool finishPause = false;
+            invoker.finishAction += () =>
+            {
+                // Debug.Log("finishPauseEvent async");
+                finishPause = true;
+            };
+            
+            // pop the panel
+            UIPanelElement popPanel = _UIStack.Pop();
+            popPanel.OnPop();
+            
+            // wait until the old panel finish pop
+            while (!finishPause)
+            {
+                yield return new WaitForSeconds(checkRate);
+            }
+            
+            popPanel.OnFinishPop();
+            
+            // resume the current stack
+            UIPanelElement resumePanel = _UIStack.Peek();
+            if (resumePanel != null)
+                resumePanel.OnResume();
         }
 
         #endregion
