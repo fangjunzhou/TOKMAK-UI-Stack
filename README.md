@@ -13,6 +13,7 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 在使用本框架之前，您需要安装本项目的依赖包，包括：
 `com.dbrizov.naughtyattributes`
 `com.serializabledictionary`
+`net.wraithavengames.unityinterfacesupport`
 `com.unity.inputsystem`
 
 您可以直接将以下内容复制到项目包文件管理器的`manifest.json`中以快速导入所有依赖项
@@ -20,6 +21,7 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 ```
 "com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
 "com.serializabledictionary": "https://github.com/Fangjun-Zhou/Unity-SerializableDictionary.git#upm-serializabledictionary",
+"net.wraithavengames.unityinterfacesupport": "https://github.com/TheDudeFromCI/Unity-Interface-Support.git?path=/Packages/net.wraithavengames.unityinterfacesupport",
 "com.unity.inputsystem": "1.1.0-pre.5",
 ```
 
