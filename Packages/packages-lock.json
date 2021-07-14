@@ -8,11 +8,11 @@
       "hash": "bf09948bcab85f0d1c30ad438e7f6d1d590823fb"
     },
     "com.serializabledictionary": {
-      "version": "https://github.com/Fangjun-Zhou/Unity-SerializableDictionary.git#77d100a9a51b8ead607659f0fbeb436589e62a49",
+      "version": "https://github.com/Fangjun-Zhou/Unity-SerializableDictionary.git#upm-serializabledictionary",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "77d100a9a51b8ead607659f0fbeb436589e62a49"
+      "hash": "9bc332f23c44fd68484e16a2d769a1b0e9f216b2"
     },
     "com.unity.collab-proxy": {
       "version": "1.5.7",
