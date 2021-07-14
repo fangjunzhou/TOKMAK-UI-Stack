@@ -3,8 +3,8 @@
     "rootNamespace": "",
     "references": [
         "NaughtyAttributes.Core",
-        "SerializableDict.Runtime",
-        "UnityInterfaceSupport"
+        "UnityInterfaceSupport",
+        "SerializableDict.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
