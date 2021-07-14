@@ -169,19 +169,27 @@ namespace FinTOKMAK.UIStackSystem.Runtime
         {
             UnityAction methodDelegate =
                 System.Delegate.CreateDelegate(typeof(UnityAction), this, "SetGameObjectActive") as UnityAction;
+#if UNITY_EDITOR
             UnityEditor.Events.UnityEventTools.AddPersistentListener (pushEvent, methodDelegate);
+#endif
             
             methodDelegate =
                 System.Delegate.CreateDelegate(typeof(UnityAction), this, "SetGameObjectInactive") as UnityAction;
+#if UNITY_EDITOR
             UnityEditor.Events.UnityEventTools.AddPersistentListener (finishPopEvent, methodDelegate);
+#endif
             
             methodDelegate =
                 System.Delegate.CreateDelegate(typeof(UnityAction), this, "SetGameObjectInactive") as UnityAction;
+#if UNITY_EDITOR
             UnityEditor.Events.UnityEventTools.AddPersistentListener (finishPauseEvent, methodDelegate);
+#endif
             
             methodDelegate =
                 System.Delegate.CreateDelegate(typeof(UnityAction), this, "SetGameObjectActive") as UnityAction;
+#if UNITY_EDITOR
             UnityEditor.Events.UnityEventTools.AddPersistentListener (resumeEvent, methodDelegate);
+#endif
         }
 
         public void SetGameObjectActive()
