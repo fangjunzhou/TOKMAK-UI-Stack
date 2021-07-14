@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2021-07-15
+### Fixed
+- Fixed the asmdef target platform and update dependent package
+
 ## [0.1.0] - 2021-07-02
 ### Added
 - A UIPanelChild class for all the children in a panel to get access to the panel itself.
@@ -41,6 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Developers can use it to handle panel logic.
 
 [Unreleased]: https://github.com/Fangjun-Zhou/Unity-UI-Stack-System
+[0.1.1]: https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/releases/tag/uistacksystem-0.1.1
 [0.1.0]: https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/releases/tag/uistacksystem-0.1.0
 [0.0.3]: https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/releases/tag/uistacksystem-0.0.3
 [0.0.2]: https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/releases/tag/uistacksystem-0.0.2
