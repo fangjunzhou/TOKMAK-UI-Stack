@@ -13,11 +13,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{c9a6200b-1608-eb3a-42ac-cc12b7152f57}</ProjectGuid>
+    <ProjectGuid>{1396500c-9c9c-d9cf-7d1e-5c3234442954}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>FinTOKMAK.UIStackSystem.Editor</AssemblyName>
+    <AssemblyName>Unity.SerializedDictionary.Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -52,8 +52,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Package\Editor\UIStackManagerCustomEditor.cs" />
-     <None Include="Assets\Package\Editor\FinTOKMAK.UIStackSystem.Editor.asmdef" />
+     <Compile Include="Packages\com.prastiwar.unityserializeddictionary@769342ef7b\Editor\UDictionaryDrawer.cs" />
+     <Compile Include="Packages\com.prastiwar.unityserializeddictionary@769342ef7b\Editor\UDictionaryExtensions.cs" />
+     <Compile Include="Packages\com.prastiwar.unityserializeddictionary@769342ef7b\Editor\UDictionaryReadKeyDrawer.cs" />
+     <None Include="Packages\com.prastiwar.unityserializeddictionary@769342ef7b\Editor\Unity.SerializedDictionary.Editor.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program Files/Unity Editor/2020.3.11f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -645,12 +647,6 @@
  <Reference Include="System.Xml.XPath.XDocument">
  <HintPath>D:/Program Files/Unity Editor/2020.3.11f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
- <Reference Include="NaughtyAttributes.Core">
- <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
- </Reference>
- <Reference Include="SerializableDict.Runtime">
- <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
@@ -665,9 +661,9 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="FinTOKMAK.UIStackSystem.Runtime.csproj">
-      <Project>{c40b6529-659c-135a-2097-a9f3d1aacd54}</Project>
-      <Name>FinTOKMAK.UIStackSystem.Runtime</Name>
+    <ProjectReference Include="Unity.SerializedDictionary.csproj">
+      <Project>{b5cda069-90d8-9b22-f21b-744d8652b3a8}</Project>
+      <Name>Unity.SerializedDictionary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -55,9 +55,9 @@
      <Compile Include="Assets\Package\Runtime\UIStackManager.cs" />
      <Compile Include="Assets\Package\Runtime\UIPanelElement.cs" />
      <Compile Include="Assets\Package\Runtime\UIPanelChild.cs" />
+     <Compile Include="Assets\Package\Runtime\UIStackEventInvoker.cs" />
      <Compile Include="Assets\Package\Runtime\IUIStackEventInvoker.cs" />
      <Compile Include="Assets\Package\Runtime\UIStackListeners.cs" />
-     <Compile Include="Assets\Package\Runtime\UIStackEventInvoker.cs" />
      <None Include="Assets\Package\Runtime\FinTOKMAK.UIStackSystem.Runtime.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program Files/Unity Editor/2020.3.11f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -647,11 +647,11 @@
  <Reference Include="NaughtyAttributes.Core">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
  </Reference>
- <Reference Include="SerializableDict.Runtime">
- <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
- </Reference>
  <Reference Include="UnityInterfaceSupport">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityInterfaceSupport.dll</HintPath>
+ </Reference>
+ <Reference Include="SerializableDict.Runtime">
+ <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>

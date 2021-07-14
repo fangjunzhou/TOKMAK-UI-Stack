@@ -645,9 +645,6 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>D:/Program Files/Unity Editor/2020.3.11f1c1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
- <Reference Include="SerializableDict.Runtime">
- <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
- </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
@@ -675,6 +672,9 @@
  <Reference Include="NaughtyAttributes.Core">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
  </Reference>
+ <Reference Include="UnityInterfaceSupport.Editor">
+ <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityInterfaceSupport.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
@@ -684,20 +684,20 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="UnityInterfaceSupport">
+ <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityInterfaceSupport.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="SerializableDict.Runtime">
+ <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="SerializableDict.Editor">
  <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/SerializableDict.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityInterfaceSupport.Editor">
- <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityInterfaceSupport.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityInterfaceSupport">
- <HintPath>D:/Unity Projects/unity-ui-stack-system/Library/ScriptAssemblies/UnityInterfaceSupport.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
