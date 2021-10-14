@@ -1,6 +1,6 @@
-# Unity UI-Stack-System
+# TOKMAK UI Stack
 
-Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍片环流室 Fin TOKMAK开发组开发，使用此包请遵守相关许可。
+TOKMAK UI Stack是一个基于UGUI的UI栈管理系统，本项目由鳍片环流室 Fin TOKMAK开发组开发，使用此包请遵守相关许可。
 
 使用此系统可以快速建立一个UI Stack并且将场景中复杂的UI层级关系通过栈进行组织。
 
@@ -8,7 +8,7 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 
 例如，下面演示中这段UI逻辑包括了战斗面板中的HUD和部署界面的切换。在战斗面板外，战斗面板还需要和设置面板切换。
 
-不使用Unity UI-Stack-System时开发者需要编写大量逻辑来保存切换时的面板状态或者动画控制，但是通过Unity UI-Stack-System，这所有的工作可以在五分钟之内通过布置面板关系来解决。
+不使用TOKMAK UI Stack时开发者需要编写大量逻辑来保存切换时的面板状态或者动画控制，但是通过TOKMAK UI Stack，这所有的工作可以在五分钟之内通过布置面板关系来解决。
 
 ![ui_stack_system_demo_2](https://user-images.githubusercontent.com/79500078/124217026-0a215c80-db2a-11eb-96eb-3737400fa477.gif)
 
@@ -33,7 +33,7 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 
 ## 安装
 
-安装Unity UI-Stack-System可以在package manager中直接添加`https://github.com/Fangjun-Zhou/Unity-UI-Stack-System.git#upm-uistacksystem`
+安装TOKMAK UI Stack可以在package manager中直接添加`https://github.com/Fangjun-Zhou/Unity-UI-Stack-System.git#upm-uistacksystem`
 
 或是将以下内容复制到项目包文件管理器的`manifest.json`中
 
@@ -43,11 +43,11 @@ Unity UI-Stack-System是一个基于UGUI的UI栈管理系统，本项目由鳍�
 
 # 文档
 
-Unity UI-Stack-System的使用文档请看[这里](https://fangjun-zhou.github.io/Unity-UI-Stack-System/)
+TOKMAK UI Stack的使用文档请看[这里](https://fangjun-zhou.github.io/TOKMAK-UI-Stack/index.html)
 
 # 更新日志
 
-[CHANGELOG](https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/blob/main/Assets/Package/CHANGELOG.md)
+[CHANGELOG](https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack/blob/main/Assets/Package/CHANGELOG.md)
 
 # 使用
 
