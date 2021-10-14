@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTOKMAK.UIStackSystem.Runtime", "FinTOKMAK.UIStackSystem.Runtime.csproj", "{c40b6529-659c-135a-2097-a9f3d1aacd54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTOKMAK.UIStackSystem.Runtime", "FinTOKMAK.UIStackSystem.Runtime.csproj", "{d4be9dee-3648-e35b-ff40-1865391cbb05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{13351461-858e-42e8-e669-ac44a8dc82bf}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{3fcded18-4e4e-d491-e59a-7f90a5d39bda}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTOKMAK.UIStackSystem.Editor", "FinTOKMAK.UIStackSystem.Editor.csproj", "{c9a6200b-1608-eb3a-42ac-cc12b7152f57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTOKMAK.UIStackSystem.Editor", "FinTOKMAK.UIStackSystem.Editor.csproj", "{9766170b-2a96-cff1-56cc-99a1bfc3a454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{c40b6529-659c-135a-2097-a9f3d1aacd54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{c40b6529-659c-135a-2097-a9f3d1aacd54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{c40b6529-659c-135a-2097-a9f3d1aacd54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{c40b6529-659c-135a-2097-a9f3d1aacd54}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13351461-858e-42e8-e669-ac44a8dc82bf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13351461-858e-42e8-e669-ac44a8dc82bf}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13351461-858e-42e8-e669-ac44a8dc82bf}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13351461-858e-42e8-e669-ac44a8dc82bf}.Release|Any CPU.Build.0 = Release|Any CPU
-		{c9a6200b-1608-eb3a-42ac-cc12b7152f57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{c9a6200b-1608-eb3a-42ac-cc12b7152f57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{c9a6200b-1608-eb3a-42ac-cc12b7152f57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{c9a6200b-1608-eb3a-42ac-cc12b7152f57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{d4be9dee-3648-e35b-ff40-1865391cbb05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d4be9dee-3648-e35b-ff40-1865391cbb05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d4be9dee-3648-e35b-ff40-1865391cbb05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{d4be9dee-3648-e35b-ff40-1865391cbb05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3fcded18-4e4e-d491-e59a-7f90a5d39bda}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3fcded18-4e4e-d491-e59a-7f90a5d39bda}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3fcded18-4e4e-d491-e59a-7f90a5d39bda}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3fcded18-4e4e-d491-e59a-7f90a5d39bda}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9766170b-2a96-cff1-56cc-99a1bfc3a454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9766170b-2a96-cff1-56cc-99a1bfc3a454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9766170b-2a96-cff1-56cc-99a1bfc3a454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9766170b-2a96-cff1-56cc-99a1bfc3a454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
