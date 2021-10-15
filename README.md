@@ -1,6 +1,6 @@
 # TOKMAK UI Stack
 
-[Chinese version here 中文README点击这里]()
+[Chinese version here 中文README点击这里](https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack/blob/main/README.md#tokmak-ui-stack-1)
 
 TOKMAK UI Stack is a stack based UGUI manage system. This package is developed by FinTOKMAK team.
 
