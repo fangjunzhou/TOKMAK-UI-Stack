@@ -6,25 +6,25 @@ TOKMAK UI Stack is a stack based UGUI manage system. This package is developed b
 
 Using this system, developers can quickly construct an UI stack, and organize multiple layers in the scene by the stack.
 
-On top of that, each layer in the stack (UI Panel) can response to the stack operation. Base on this feature, developers can keep the logic code running in the background, in order to implement complicated UI logic development.
+On top of that, each layer in the stack (UI Panel) can response to the stack operation. Base on this feature, developers can keep the logic code running in the background, in order to implement complicated UI logic.
 
-For example, in the following demo, a respawn panel and HUD panel is shown in the battle panel. Outside the battle panel, there's also a settings panel. Without using TOKMAK UI Stack, a large consumption of logic are needed to keep track of the panel state and animation state. However, TOKMAK UI Stack enables you to organize the logic nice and safe in just 5 minutes.
+For example, in the following demo, a respawn panel and HUD panel is shown in the battle panel. Outside the battle panel, there's also a settings panel. Without using TOKMAK UI Stack, a large consumption of code are needed to keep track of the panel state and animation state. However, TOKMAK UI Stack enables you to organize the logic nice and safe in just 5 minutes.
 
 I will introduce the terms and usage latter in the README
 
 ![ui_stack_system_demo_2](https://user-images.githubusercontent.com/79500078/124217026-0a215c80-db2a-11eb-96eb-3737400fa477.gif)
 
-# 下载
+# Downloads
 
-## 依赖项
+## Dependencies
 
-在使用本框架之前，您需要安装本项目的依赖包，包括：
+Before using this package, you need to install the dependencies for the project, including:
 `com.dbrizov.naughtyattributes`
 `com.serializabledictionary`
 `net.wraithavengames.unityinterfacesupport`
 `com.unity.inputsystem`
 
-您可以直接将以下内容复制到项目包文件管理器的`manifest.json`中以快速导入所有依赖项
+You can copy and paste the following content into your package manifest.json file to quickly import the required dependencies:
 
 ```
 "com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
@@ -33,63 +33,61 @@ I will introduce the terms and usage latter in the README
 "com.unity.inputsystem": "1.1.0-pre.5",
 ```
 
-## 安装
+## Installation
 
-安装TOKMAK UI Stack可以在package manager中直接添加`https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack-Release.git`
-
-或是将以下内容复制到项目包文件管理器的`manifest.json`中
+You can either adding `https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack-Release.git` in the package manager or copy and paste the following content into your pacakge manifest.json file to install TOKMAK UI Stack:
 
 ```
 "com.fintokmak.tokmakuistack": "https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack-Release.git"
 ```
 
-# 文档
+# Documentation
 
-TOKMAK UI Stack的使用文档请看[这里](https://fangjun-zhou.github.io/TOKMAK-UI-Stack/index.html)
+[Here](https://fangjun-zhou.github.io/TOKMAK-UI-Stack/index.html) is the documentation of TOKMAK UI Stack System.
 
-# 更新日志
+# CHANGELOG
 
 [CHANGELOG](https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack/blob/main/Assets/Package/CHANGELOG.md)
 
-# 使用
+# Usage
 
 ## UI Panel Element
 
-所有需要被UI Stack接管的Panel都需要挂载UIPanelElement
+All the Panels handled by TOKMAK UI Stack should have UIPanelElement component.
 
-### Panel事件
+### Panel Events
 
-UIPanelElement中除了包含一个对调用自身的UI Stack Manager（后文中会介绍）的引用和一个Panel name字段，还有六个UI Stack操作的回调函数及对应的Unity Event。
+In the UIPanelElement, there's a reference to the UI Stack Manager (will be mentioned latter) calling itself, a Panel name field, and six Unity Event conresponding to six key callback function.
 
-这六个事件分别是`OnPush`, `OnPop`, `OnFinishPop`, `OnPause`, `OnFinishPause`, `OnResume`。
+These six events are `OnPush`, `OnPop`, `OnFinishPop`, `OnPause`, `OnFinishPause`, `OnResume`
 
-后文中还会详细介绍这六个关键事件的意义和生命周期中调用他们的过程
+I will introduce the meaning and the calling process in the life cycle of these six events latter in the README.
 
 ### UIFinishListeners
 
-UIPanelElement中有一个UIStackEventListener列表字段
+There's a List of UIFinishListeners in UIPanelElement.
 
-这个列表中储存了一系列UIStackEventInvoker。这些Invoker需要被挂载到具有退出动画的UI对象上，在完成动画时，UI对象需要通过脚本或者AnimationEvent（如果你没有使用DOTween）调用EventInvoker中的完成事件。
+The List stores a series of UIStackEventInvokers. These invokers should be the components of UI elements which have exit animation. After playing the animation, the UI element should call the Finish event in the EventInvoker by code or AnimationEvent (if you don't use the DOTween).
 
-UIPanelElement会在列表中的所有UI完成退出动画后才释放挂起状态，这一逻辑也会在后文中介绍。
+UIPanelElement will release the suspended state after all the UI in the List finish playing the animation. This logic will also be introduced latter in the README.
 
-### 示例
+### Example
 
-通过Unity Event SetActive面板
+SetActive Panels using Unity Event
 
 ![image](https://user-images.githubusercontent.com/79500078/124213844-de9b7380-db23-11eb-9cf2-3b9574dcb618.png)
 
-通过事件监听机制触发和释放栈操作挂起状态
+Trigger and release stack suspended state using event listener feature.
 
 ![image](https://user-images.githubusercontent.com/79500078/124214522-eb6c9700-db24-11eb-8894-9f7d91d43717.png)
 
 ## UI Panel Child
 
-处于任意UI Panel内的逻辑都需要继承自UIPanelChild基类。
+It's suggested that any MonoBehaviour inside the UI Panel should inherit UIPanelChild.
 
-这个类提供了对父Panel的引用和基础的Panel合法性校验功能
+This base class provides the reference to the parent Panel and the validation check of the Panels.
 
-### 示例
+### Examples
 
 ```c#
 public class SettingsButtonController : UIPanelChild
@@ -122,21 +120,21 @@ public class SettingsButtonController : UIPanelChild
 
 ![image](https://user-images.githubusercontent.com/79500078/124214644-2078e980-db25-11eb-90a9-f0fd51f52381.png)
 
-UIStackManager是UI Stack System的核心组件，这个组件通过一个StackADT对其所有子面板进行管理。
+UIStackManager is the core component of the TOKMAK UI Stack system. This component organize all the child panels using StackADT.
 
-其中，UIStackManage所有可调用的UIPanelElement以<UIPanelElement, string>字典的形式储存在UIPanels中。Key是对应的UIPanelElement，Value是Panel name。
+All the UIPanelElements are stored in a Dictionary<UIPanelElement, string>. Key is the corresponding UIPanelElement, and Value is the Panel name.
 
-HasInitializePanel控制UI Stack Manager的初始化Panel。当取消勾选时，场景载入时将不会有Panel被压入UI Stack。
+HasInitializePanel controls the initialization process of the UI Stack. When unchecked, there will be no Panel pushed into the UI Stack when new scene is loaded.
 
-InitializationPanel是初始化压入的Panel，此Panel必须处于UIPanels中才可以被调用
+InitializationPanel is the Panel pushed into the stack when initialized. This Panel is available only if it's in the UIPanels.
 
 ## UI Stack Event Invoker
 
-所有涉及到退出动画的UI都需要挂载UIStackEventInvoker.
+All the UI elements having exit animation should have UIStackEventInvoker
 
-UIStackEventInvoker中的Finish函数需要在动画完成的时候调用。Panel通过对所有Invoker的监听，可以在最后一个动画播放完成后完成等待挂起并退出。
+The Finish method in the UIStackEventInvoker should be called after the exit animation has finished. Panel can release the suspended state after the last UI finish its exit animation by listening to all the Invokers.
 
-### 示例
+### Example
 
 ```c#
 public class UIStackEventInvoker : MonoBehaviour, IUIStackEventInvoker
@@ -157,19 +155,19 @@ public class UIStackEventInvoker : MonoBehaviour, IUIStackEventInvoker
 }
 ```
 
-挂载Invoker的UI
+UI with Invoker
 
 ![image](https://user-images.githubusercontent.com/79500078/124215027-d80dfb80-db25-11eb-8327-8aae42d401ce.png)
 
-通过动画事件调用
+Calling Finish by AnimationEvents
 
 ![image](https://user-images.githubusercontent.com/79500078/124215107-fd9b0500-db25-11eb-9efe-a80b17d1d1ac.png)
 
 ![image](https://user-images.githubusercontent.com/79500078/124215152-13102f00-db26-11eb-8808-f2fe8e3782e8.png)
 
-## UI Stack 生命周期
+## UI Stack life cycle
 
-[UI Stack System生命周期.pdf](https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/files/6751850/UI.Stack.System.pdf)
+[UI Stack System life cycle.pdf](https://github.com/Fangjun-Zhou/Unity-UI-Stack-System/files/6751850/UI.Stack.System.pdf)
 
 
 
