@@ -33,12 +33,12 @@ TOKMAK UI Stack是一个基于UGUI的UI栈管理系统，本项目由鳍片环�
 
 ## 安装
 
-安装TOKMAK UI Stack可以在package manager中直接添加`https://github.com/Fangjun-Zhou/Unity-UI-Stack-System.git#upm-uistacksystem`
+安装TOKMAK UI Stack可以在package manager中直接添加`https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack-Release.git`
 
 或是将以下内容复制到项目包文件管理器的`manifest.json`中
 
 ```
-"com.fintokmak.uistacksystem": "https://github.com/Fangjun-Zhou/Unity-UI-Stack-System.git#upm-uistacksystem"
+"com.fintokmak.tokmakuistack": "https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack-Release.git"
 ```
 
 # 文档
