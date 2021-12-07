@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3fcded18-4e4e-d491-e59a-7f90a5d39bda}</ProjectGuid>
+    <ProjectGuid>{e02bc0c0-b6b4-c6e5-214f-eab4fe497352}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -298,7 +298,7 @@
  <HintPath>D:/Program Files/Unity Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Program Files/Unity Editor/2020.3.20f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -646,67 +646,67 @@
  <HintPath>D:/Program Files/Unity Editor/2020.3.20f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="SerializableDict.Runtime">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="NaughtyAttributes.Editor">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/NaughtyAttributes.Editor.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/NaughtyAttributes.Editor.dll</HintPath>
  </Reference>
  <Reference Include="NaughtyAttributes.Test">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/NaughtyAttributes.Test.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/NaughtyAttributes.Test.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="NaughtyAttributes.Core">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
  </Reference>
  <Reference Include="UnityInterfaceSupport.Editor">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/UnityInterfaceSupport.Editor.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityInterfaceSupport.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InputSystem">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityInterfaceSupport">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/UnityInterfaceSupport.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityInterfaceSupport.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="SerializableDict.Editor">
- <HintPath>D:/Unity Project/Unity-UI-Stack-System/Library/ScriptAssemblies/SerializableDict.Editor.dll</HintPath>
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/SerializableDict.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FinTOKMAK.UIStackSystem.Editor.csproj">
-      <Project>{9766170b-2a96-cff1-56cc-99a1bfc3a454}</Project>
+      <Project>{f51f1ac5-eecb-0467-6da3-c32e8c90b113}</Project>
       <Name>FinTOKMAK.UIStackSystem.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="FinTOKMAK.UIStackSystem.Runtime.csproj">
-      <Project>{d4be9dee-3648-e35b-ff40-1865391cbb05}</Project>
+      <Project>{1b004ad2-31c8-e93e-fc57-79fbffeebede}</Project>
       <Name>FinTOKMAK.UIStackSystem.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

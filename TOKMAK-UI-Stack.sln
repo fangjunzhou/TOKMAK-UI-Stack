@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTOKMAK.UIStackSystem.Runtime", "FinTOKMAK.UIStackSystem.Runtime.csproj", "{1b004ad2-31c8-e93e-fc57-79fbffeebede}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{e02bc0c0-b6b4-c6e5-214f-eab4fe497352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTOKMAK.UIStackSystem.Editor", "FinTOKMAK.UIStackSystem.Editor.csproj", "{f51f1ac5-eecb-0467-6da3-c32e8c90b113}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1b004ad2-31c8-e93e-fc57-79fbffeebede}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1b004ad2-31c8-e93e-fc57-79fbffeebede}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1b004ad2-31c8-e93e-fc57-79fbffeebede}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1b004ad2-31c8-e93e-fc57-79fbffeebede}.Release|Any CPU.Build.0 = Release|Any CPU
+		{e02bc0c0-b6b4-c6e5-214f-eab4fe497352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e02bc0c0-b6b4-c6e5-214f-eab4fe497352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e02bc0c0-b6b4-c6e5-214f-eab4fe497352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{e02bc0c0-b6b4-c6e5-214f-eab4fe497352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{f51f1ac5-eecb-0467-6da3-c32e8c90b113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f51f1ac5-eecb-0467-6da3-c32e8c90b113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f51f1ac5-eecb-0467-6da3-c32e8c90b113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{f51f1ac5-eecb-0467-6da3-c32e8c90b113}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

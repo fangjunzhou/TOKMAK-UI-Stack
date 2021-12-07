@@ -14,8 +14,8 @@
 
 Use the Package Manager to install from url
 
-`https://github.com/Fangjun-Zhou/Unity-UI-Stack-System.git#upm-uistacksystem`
+`https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack-Release.git`
 
 or add in the manifest.json
 
-`"com.fintokmak.uistacksystem": "https://github.com/Fangjun-Zhou/Unity-UI-Stack-System.git#upm-uistacksystem"`
+`"com.fintokmak.tokmakuistack": "https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack-Release.git"`
