@@ -43,7 +43,7 @@ You can either adding `https://github.com/Fangjun-Zhou/TOKMAK-UI-Stack-Release.g
 
 # Documentation
 
-[Here](https://fangjun-zhou.github.io/TOKMAK-UI-Stack/index.html) is the documentation of TOKMAK UI Stack System.
+[Here](https://fangjun-zhou.github.io/TOKMAK-UI-Stack-Release/) is the documentation of TOKMAK UI Stack System.
 
 # CHANGELOG
 
