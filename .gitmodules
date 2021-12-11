@@ -1,0 +1,3 @@
+[submodule "Assets/Package"]
+	path = Assets/Package
+	url = git@fintokmak.com:fintokmak/tokmak-ui-stack-release.git
