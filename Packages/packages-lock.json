@@ -14,6 +14,20 @@
       "dependencies": {},
       "hash": "6ff42768879f6d3721f27c1fc1ba0c1d145a3f27"
     },
+    "com.fintokmak.universaleventsystem": {
+      "version": "https://github.com/Fangjun-Zhou/TOKMAK-Universal-Event-Release.git#main",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "21858c704caf848b8923afc620f6bc11c6c67640"
+    },
+    "com.hextantstudios.utilities": {
+      "version": "https://github.com/hextantstudios/com.hextantstudios.utilities.git#master",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "d6230d06ab6cbc7379d7e378f2c2b5d9b5ab9a91"
+    },
     "com.serializabledictionary": {
       "version": "https://github.com/Fangjun-Zhou/Unity-SerializableDictionary.git#upm-serializabledictionary",
       "depth": 0,
@@ -88,6 +102,22 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.sysroot": {
+      "version": "0.1.19-preview",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.sysroot.linux-x86_64": {
+      "version": "0.1.14-preview",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.sysroot": "0.1.18-preview"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.test-framework": {
       "version": "1.1.29",
       "depth": 0,
@@ -117,6 +147,16 @@
         "com.unity.modules.animation": "1.0.0",
         "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.toolchain.win-x86_64-linux-x86_64": {
+      "version": "0.1.21-preview",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.sysroot": "0.1.19-preview",
+        "com.unity.sysroot.linux-x86_64": "0.1.14-preview"
       },
       "url": "https://packages.unity.com"
     },
