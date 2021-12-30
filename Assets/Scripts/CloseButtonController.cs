@@ -1,4 +1,5 @@
-﻿using FinTOKMAK.UIStackSystem.Runtime;
+﻿using System;
+using FinTOKMAK.UIStackSystem.Runtime;
 using NaughtyAttributes;
 using UnityEngine;
 
@@ -16,10 +17,7 @@ namespace DefaultNamespace
         /// </summary>
         public void CloseSettingsPanelIfOnTop()
         {
-            if (rootPanel.panelRootManager.Peek() == rootPanel)
-            {
-                rootPanel.panelRootManager.AsyncPop(rootPanel, 0.1f);
-            }
+            throw new NotImplementedException();
         }
 
         #endregion

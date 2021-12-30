@@ -30,7 +30,7 @@ namespace DefaultNamespace
         /// </summary>
         public void OpenSettingsPanel()
         {
-            rootPanel.panelRootManager.AsyncPush(settingsPanel, rootPanel , 0.1f);
+            throw new NotImplementedException();
         }
 
         #endregion
