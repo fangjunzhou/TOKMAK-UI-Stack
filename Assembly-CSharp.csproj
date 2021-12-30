@@ -699,6 +699,27 @@
  <Reference Include="SerializableDict.Editor">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/SerializableDict.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="FinTOKMAK.EventSystem.Runtime">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/FinTOKMAK.EventSystem.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="FinTOKMAK.EventSystem.Editor">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/FinTOKMAK.EventSystem.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Hextant Utilities">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Hextant Utilities.dll</HintPath>
+ </Reference>
+ <Reference Include="com.hextantstudios.utilities">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/com.hextantstudios.utilities.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Sysroot.Linux_x86_64">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.SysrootPackage.Editor">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FinTOKMAK.UIStackSystem.Editor.csproj">

@@ -55,14 +55,14 @@
      <Compile Include="Assets\Package\Runtime\UIStackManager.cs" />
      <Compile Include="Assets\Package\Runtime\UIPanelElement.cs" />
      <Compile Include="Assets\Package\Runtime\UIPanelChild.cs" />
-     <Compile Include="Assets\Package\Runtime\UIStackEventInvoker.cs" />
-     <Compile Include="Assets\Package\Runtime\IUIStackEventInvoker.cs" />
-     <Compile Include="Assets\Package\Runtime\UIStackListeners.cs" />
      <Compile Include="Assets\Package\Runtime\IUIPanelElement.cs" />
      <Compile Include="Assets\Package\Runtime\IUIPanelStack.cs" />
      <Compile Include="Assets\Package\Runtime\IUIPanelTab.cs" />
      <Compile Include="Assets\Package\Runtime\UITabManager.cs" />
      <Compile Include="Assets\Package\Runtime\UIManager.cs" />
+     <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackManager.cs" />
+     <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackEventSettings.cs" />
+     <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackEventAttribute.cs" />
      <None Include="Assets\Package\Runtime\FinTOKMAK.UIStackSystem.Runtime.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -666,6 +666,15 @@
  </Reference>
  <Reference Include="SerializableDict.Runtime">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="FinTOKMAK.EventSystem.Runtime">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/FinTOKMAK.EventSystem.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="com.hextantstudios.utilities">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/com.hextantstudios.utilities.dll</HintPath>
+ </Reference>
+ <Reference Include="Hextant Utilities">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Hextant Utilities.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
