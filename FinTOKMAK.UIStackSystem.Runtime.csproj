@@ -58,6 +58,8 @@
      <Compile Include="Assets\Package\Runtime\UIStackEventInvoker.cs" />
      <Compile Include="Assets\Package\Runtime\IUIStackEventInvoker.cs" />
      <Compile Include="Assets\Package\Runtime\UIStackListeners.cs" />
+     <Compile Include="Assets\Package\Runtime\IUIPanelElement.cs" />
+     <Compile Include="Assets\Package\Runtime\IUIPanelStack.cs" />
      <None Include="Assets\Package\Runtime\FinTOKMAK.UIStackSystem.Runtime.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
