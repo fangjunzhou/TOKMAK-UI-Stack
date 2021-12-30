@@ -1,15 +1,51 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Unity Projects/unity-ui-stack-system/docfx_project",
+  "source_base_path": "/builds/fintokmak/tokmak-ui-stack-release/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.html",
+          "hash": "R+wRWb8k/+Xrbgovu760oA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.html",
+          "hash": "p3LCfUBJIduMdIa3jZi7Cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelTab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelTab.html",
+          "hash": "ekaOawMY/mgZ/wZ91U3SOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.yml",
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html",
-          "hash": "SN56uN9UJt1XN3O1HkEuRwXeP6WVgRBCtn8MnVsZ17Q="
+          "hash": "RYxxYPPLh6s2PYXTK/wFKg=="
         }
       },
       "is_incremental": false,
@@ -21,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html",
-          "hash": "SXz0J03WQ+K/bHAWUl9r8hIP0kNEwKg9/qxerAvnZco="
+          "hash": "+P6k/Y4kxsIW67ORoyR0iw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html",
-          "hash": "0/4Tso4a0lh2Pce8KEDY7oIOndUspJBFpFQe24PBvtg="
+          "hash": "mDgV9BxPSj5ePoH6z7AoqA=="
         }
       },
       "is_incremental": false,
@@ -45,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict.html",
-          "hash": "EKSdHoFS+TpwbA4ARv19mleVhtYy7GBkmfWdoX9BtjA="
+          "hash": "YTOrpHkrjFATsI5Ael9ayA=="
         }
       },
       "is_incremental": false,
@@ -57,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html",
-          "hash": "J3BrzGurR4B8Nk+pRU1iYkVXNhQ81+XJpZFlr0EAFPY="
+          "hash": "iqPz1dnhybfAfO5MCDUsUA=="
         }
       },
       "is_incremental": false,
@@ -69,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html",
-          "hash": "KeheVf484HOoqfeRQ/VYnypxpSbf98qR97EuTaBZEvs="
+          "hash": "ADEFyxHzNG8doOTT9WBO1g=="
         }
       },
       "is_incremental": false,
@@ -81,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html",
-          "hash": "IL4ljpvn4/ZRk8xnC6iFnlZGDCr2NSsVcSnrtUDn7u4="
+          "hash": "bHJhIn0tp0+CosHgPezYPw=="
         }
       },
       "is_incremental": false,
@@ -93,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.html",
-          "hash": "Hj7dpN7h4ZBhVz+OyPPtQ1chf8Rv3dgpP9xfrB+K5+I="
+          "hash": "lsnqL3dwr9ZDj3eG+YTBKw=="
         }
       },
       "is_incremental": false,
@@ -105,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Package.Editor.UIStackManagerCustomEditor.html",
-          "hash": "neoNtvtrAElYCrQ6xd6j8fnit+5duEhY2MMHPcVAax0="
+          "hash": "K3AOZJ8vUnQLGAqAJI/RDw=="
         }
       },
       "is_incremental": false,
@@ -117,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Package.Editor.html",
-          "hash": "GwJOtbeWmdcB4sflkjkhQFKXotJ7qYp6DxIMIXglZUQ="
+          "hash": "04wrYWeE8jacEqmdiGv9ig=="
         }
       },
       "is_incremental": false,
@@ -129,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "iHHl/3PK9JuMM6fyysqiSRGMgtTQM2ITY4UuyiOPj0A="
+          "hash": "4zuP4uNTGDIvI3fhHZKxnA=="
         }
       },
       "is_incremental": false,
@@ -141,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "VyjTF2TilZmRc2zESL3YJFOB/dZAFKwThj9Ns5236Jw="
+          "hash": "e+U1RrtCy3uHvKhZ7MWfmg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,33 +189,35 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ofJhV1EzLFfmw+cs2BPyij13HVqXIwm37EoTYv7RBaE="
+          "hash": "ZzYVJXv0K71rTGiGuG+9Cw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     }
   ],
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 10,
-          "skipped_file_count": 1
+          "total_file_count": 13,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -192,8 +230,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UIPanelChild
+    <title>Interface IUIPanelStack
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UIPanelChild
+    <meta name="title" content="Interface IUIPanelStack
    ">
     <meta name="generator" content="docfx 2.51.0.0">
     
@@ -89,8 +89,8 @@
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.html" title="IUIPanelElement" class="">IUIPanelElement</a>
                           </li>
-                          <li class="">
-                            <a href="FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.html" title="IUIPanelStack" class="">IUIPanelStack</a>
+                          <li class="active">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.html" title="IUIPanelStack" class="active">IUIPanelStack</a>
                           </li>
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.IUIPanelTab.html" title="IUIPanelTab" class="">IUIPanelTab</a>
@@ -98,8 +98,8 @@
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html" title="IUIStackEventInvoker" class="">IUIStackEventInvoker</a>
                           </li>
-                          <li class="active">
-                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html" title="UIPanelChild" class="active">UIPanelChild</a>
+                          <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html" title="UIPanelChild" class="">UIPanelChild</a>
                           </li>
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html" title="UIPanelElement" class="">UIPanelElement</a>
@@ -133,47 +133,77 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelChild">
+            <article class="content wrap" id="_content" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack">
   
   
-  <h1 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelChild" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelChild" class="text-break">Class UIPanelChild
+  <h1 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelStack" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack" class="text-break">Interface IUIPanelStack
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The UI Stack interface.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UIPanelChild</span></div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.html">FinTOKMAK.UIStackSystem.Runtime</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelChild_syntax">Syntax</h5>
+  <h5 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelStack_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UIPanelChild : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IUIPanelStack</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="methods">Methods
   </h3>
   
   
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIPanelChild_rootPanel" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.rootPanel">rootPanel</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelStack_ClosePanel_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.ClosePanel*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelStack_ClosePanel_FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.ClosePanel(FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement)">ClosePanel(IUIPanelElement)</h4>
+  <div class="markdown level1 summary"><p>The method to close a panel.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UIPanelElement rootPanel</code></pre>
+    <pre><code class="lang-csharp hljs">void ClosePanel(IUIPanelElement panelElement)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html">UIPanelElement</a></td>
-        <td></td>
+        <td><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.html">IUIPanelElement</a></td>
+        <td><span class="parametername">panelElement</span></td>
+        <td><p>the panel to close.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelStack_OpenPanel_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.OpenPanel*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelStack_OpenPanel_FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.OpenPanel(FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement)">OpenPanel(IUIPanelElement)</h4>
+  <div class="markdown level1 summary"><p>The method to open a panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OpenPanel(IUIPanelElement panelElement)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.html">IUIPanelElement</a></td>
+        <td><span class="parametername">panelElement</span></td>
+        <td><p>the panel to open</p>
+</td>
       </tr>
     </tbody>
   </table>
