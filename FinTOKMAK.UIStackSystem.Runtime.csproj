@@ -60,9 +60,11 @@
      <Compile Include="Assets\Package\Runtime\IUIPanelTab.cs" />
      <Compile Include="Assets\Package\Runtime\UITabManager.cs" />
      <Compile Include="Assets\Package\Runtime\UIManager.cs" />
-     <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackManager.cs" />
+     <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackEventManager.cs" />
      <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackEventSettings.cs" />
      <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackEventAttribute.cs" />
+     <Compile Include="Assets\Package\Runtime\IUIEventInvoker.cs" />
+     <Compile Include="Assets\Package\Runtime\UIEventInvoker.cs" />
      <None Include="Assets\Package\Runtime\FinTOKMAK.UIStackSystem.Runtime.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
