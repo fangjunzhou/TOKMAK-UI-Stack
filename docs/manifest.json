@@ -5,11 +5,23 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIEventInvoker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIEventInvoker.html",
+          "hash": "k6s2H0oTcSxtVXHBY6AinA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.yml",
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.html",
-          "hash": "R+wRWb8k/+Xrbgovu760oA=="
+          "hash": "rPMQngrJsYQUoxZofLbJHw=="
         }
       },
       "is_incremental": false,
@@ -21,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.html",
-          "hash": "p3LCfUBJIduMdIa3jZi7Cw=="
+          "hash": "jukzsYSiKX/EyDiWgqhPDw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIPanelTab.html",
-          "hash": "ekaOawMY/mgZ/wZ91U3SOw=="
+          "hash": "Za//fSQpm/wWpXVgj4UsBA=="
         }
       },
       "is_incremental": false,
@@ -41,11 +53,47 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.yml",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.PanelState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.IUIStackEventInvoker.html",
-          "hash": "RYxxYPPLh6s2PYXTK/wFKg=="
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.PanelState.html",
+          "hash": "rFojvqNVuXN5x11zagUTuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.html",
+          "hash": "6GnFGzB759li45K02E5AwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIEventListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIEventListener.html",
+          "hash": "pXXchUyG6YC/PbjRVjCS4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIManager.html",
+          "hash": "rxJu4eaZTN5qm6VWvFFQ9g=="
         }
       },
       "is_incremental": false,
@@ -57,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelChild.html",
-          "hash": "+P6k/Y4kxsIW67ORoyR0iw=="
+          "hash": "aH7IQjVzI8tQZUvJtDlPrw=="
         }
       },
       "is_incremental": false,
@@ -69,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html",
-          "hash": "mDgV9BxPSj5ePoH6z7AoqA=="
+          "hash": "YQCBhJUk6FOsRPHpg9CVQg=="
         }
       },
       "is_incremental": false,
@@ -81,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict.html",
-          "hash": "YTOrpHkrjFATsI5Ael9ayA=="
+          "hash": "czJIUtU1IEeBsD3gN8yWSQ=="
         }
       },
       "is_incremental": false,
@@ -89,11 +137,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.yml",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEvent.UIStackEventAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventInvoker.html",
-          "hash": "iqPz1dnhybfAfO5MCDUsUA=="
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEvent.UIStackEventAttribute.html",
+          "hash": "QmdJfYYIzlpTszFwDoDB8w=="
         }
       },
       "is_incremental": false,
@@ -101,11 +149,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.yml",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEvent.UIStackEventManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEventListener.html",
-          "hash": "ADEFyxHzNG8doOTT9WBO1g=="
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEvent.UIStackEventManager.html",
+          "hash": "7PrSE43C9Xg3FY//1EQp4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEvent.UIStackEventSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEvent.UIStackEventSettings.html",
+          "hash": "xk2qmBkjMtGc5uHIy8eG/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackEvent.html",
+          "hash": "+tIa8F77QMhSon71/fMjyQ=="
         }
       },
       "is_incremental": false,
@@ -117,7 +189,19 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UIStackManager.html",
-          "hash": "bHJhIn0tp0+CosHgPezYPw=="
+          "hash": "b0yCXTQyEcEywc5C6YCCTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UITabManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.UITabManager.html",
+          "hash": "oIvg5O0JVfN/HvRBOdMwLA=="
         }
       },
       "is_incremental": false,
@@ -129,7 +213,31 @@
       "output": {
         ".html": {
           "relative_path": "api/FinTOKMAK.UIStackSystem.Runtime.html",
-          "hash": "lsnqL3dwr9ZDj3eG+YTBKw=="
+          "hash": "C8R5V+rPH6Ga6FNrLlfCFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Package.Editor.UIStackEvent.GlobalEventDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Package.Editor.UIStackEvent.GlobalEventDrawer.html",
+          "hash": "KY5duqNS2sOmIQjrIXeZjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Package.Editor.UIStackEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Package.Editor.UIStackEvent.html",
+          "hash": "K1u95iv7IUBFAF6E4iQnTg=="
         }
       },
       "is_incremental": false,
@@ -141,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Package.Editor.UIStackManagerCustomEditor.html",
-          "hash": "K3AOZJ8vUnQLGAqAJI/RDw=="
+          "hash": "R8I6dkcwNFxsY2nNRZLm2Q=="
         }
       },
       "is_incremental": false,
@@ -153,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Package.Editor.html",
-          "hash": "04wrYWeE8jacEqmdiGv9ig=="
+          "hash": "vYeW9AjEb4Prp3VaLw5Edg=="
         }
       },
       "is_incremental": false,
@@ -165,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "4zuP4uNTGDIvI3fhHZKxnA=="
+          "hash": "oHTyzuOLzU0rCW8KmebRBA=="
         }
       },
       "is_incremental": false,
@@ -216,7 +324,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 13,
+          "total_file_count": 22,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

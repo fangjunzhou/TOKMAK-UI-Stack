@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IUIPanelElement
+    <title>Class UIEventInvoker
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IUIPanelElement
+    <meta name="title" content="Class UIEventInvoker
    ">
     <meta name="generator" content="docfx 2.51.0.0">
     
@@ -89,8 +89,8 @@
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.IUIEventInvoker.html" title="IUIEventInvoker" class="">IUIEventInvoker</a>
                           </li>
-                          <li class="active">
-                            <a href="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.html" title="IUIPanelElement" class="active">IUIPanelElement</a>
+                          <li class="">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.html" title="IUIPanelElement" class="">IUIPanelElement</a>
                           </li>
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.IUIPanelStack.html" title="IUIPanelStack" class="">IUIPanelStack</a>
@@ -101,8 +101,8 @@
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.PanelState.html" title="PanelState" class="">PanelState</a>
                           </li>
-                          <li class="">
-                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.html" title="UIEventInvoker" class="">UIEventInvoker</a>
+                          <li class="active">
+                            <a href="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.html" title="UIEventInvoker" class="active">UIEventInvoker</a>
                           </li>
                           <li class="">
                             <a href="FinTOKMAK.UIStackSystem.Runtime.UIEventListener.html" title="UIEventListener" class="">UIEventListener</a>
@@ -166,168 +166,140 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement">
+            <article class="content wrap" id="_content" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker">
   
   
-  <h1 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement" class="text-break">Interface IUIPanelElement
+  <h1 id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker" class="text-break">Class UIEventInvoker
   </h1>
-  <div class="markdown level0 summary"><p>The interface that defines the basic lifecycle of a UIPanelElement.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UIEventInvoker</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.IUIEventInvoker.html">IUIEventInvoker</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.html">FinTOKMAK.UIStackSystem.Runtime</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_syntax">Syntax</h5>
+  <h5 id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IUIPanelElement</code></pre>
+    <pre><code class="lang-csharp hljs">public class UIEventInvoker : MonoBehaviour, IUIEventInvoker</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_finishActive2Background_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.finishActive2Background*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_finishActive2Background" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.finishActive2Background">finishActive2Background</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action finishActive2Background { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_finishActive2Inactive_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.finishActive2Inactive*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_finishActive2Inactive" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.finishActive2Inactive">finishActive2Inactive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action finishActive2Inactive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_finishBackground2Inactive_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.finishBackground2Inactive*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_finishBackground2Inactive" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.finishBackground2Inactive">finishBackground2Inactive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action finishBackground2Inactive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnActive2Background_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnActive2Background*"></a>
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnActive2Background" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnActive2Background">OnActive2Background()</h4>
-  <div class="markdown level1 summary"><p>The callback function called when the panel change from Active state to Background state.</p>
-</div>
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_FinishActive2Background_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.FinishActive2Background*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_FinishActive2Background" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.FinishActive2Background">FinishActive2Background()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnActive2Background()</code></pre>
+    <pre><code class="lang-csharp hljs">public void FinishActive2Background()</code></pre>
   </div>
   
   
-  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnActive2BackgroundAsync_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnActive2BackgroundAsync*"></a>
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnActive2BackgroundAsync" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnActive2BackgroundAsync">OnActive2BackgroundAsync()</h4>
-  <div class="markdown level1 summary"><p>The async callback function called when the panel change from Active state to Background state.</p>
-</div>
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_FinishActive2Inactive_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.FinishActive2Inactive*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_FinishActive2Inactive" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.FinishActive2Inactive">FinishActive2Inactive()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task OnActive2BackgroundAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>async Task</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnActive2Inactive_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnActive2Inactive*"></a>
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnActive2Inactive" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnActive2Inactive">OnActive2Inactive()</h4>
-  <div class="markdown level1 summary"><p>The callback function called when the panel change from Active state to Inactive state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnActive2Inactive()</code></pre>
+    <pre><code class="lang-csharp hljs">public void FinishActive2Inactive()</code></pre>
   </div>
   
   
-  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnActive2InactiveAsync_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnActive2InactiveAsync*"></a>
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnActive2InactiveAsync" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnActive2InactiveAsync">OnActive2InactiveAsync()</h4>
-  <div class="markdown level1 summary"><p>The async callback function called when the panel changed from Active state to Inactive state.</p>
-</div>
+  <a id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_FinishBackground2Inactive_" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.FinishBackground2Inactive*"></a>
+  <h4 id="FinTOKMAK_UIStackSystem_Runtime_UIEventInvoker_FinishBackground2Inactive" data-uid="FinTOKMAK.UIStackSystem.Runtime.UIEventInvoker.FinishBackground2Inactive">FinishBackground2Inactive()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task OnActive2InactiveAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public void FinishBackground2Inactive()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>async Task</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnBackground2Active_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnBackground2Active*"></a>
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnBackground2Active" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnBackground2Active">OnBackground2Active()</h4>
-  <div class="markdown level1 summary"><p>The callback function called when the panel change from Background state to Active state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnBackground2Active()</code></pre>
-  </div>
-  
-  
-  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnBackground2Inactive_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnBackground2Inactive*"></a>
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnBackground2Inactive" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnBackground2Inactive">OnBackground2Inactive()</h4>
-  <div class="markdown level1 summary"><p>The callback function called when the panel changed from the Background state to Inactive state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnBackground2Inactive()</code></pre>
-  </div>
-  
-  
-  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnBackground2InactiveAsync_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnBackground2InactiveAsync*"></a>
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnBackground2InactiveAsync" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnBackground2InactiveAsync">OnBackground2InactiveAsync()</h4>
-  <div class="markdown level1 summary"><p>The async callback function called when the panel changed from Background state to Inactive state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task OnBackground2InactiveAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>async Task</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnInactive2Active_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnInactive2Active*"></a>
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnInactive2Active" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnInactive2Active">OnInactive2Active()</h4>
-  <div class="markdown level1 summary"><p>The callback function called when the panel change from Inactive state to Active state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnInactive2Active()</code></pre>
-  </div>
-  
-  
-  <a id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnInactive2Background_" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnInactive2Background*"></a>
-  <h4 id="FinTOKMAK_UIStackSystem_Runtime_IUIPanelElement_OnInactive2Background" data-uid="FinTOKMAK.UIStackSystem.Runtime.IUIPanelElement.OnInactive2Background">OnInactive2Background()</h4>
-  <div class="markdown level1 summary"><p>The callback function called when the panel change from Inactive state to Background state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnInactive2Background()</code></pre>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FinTOKMAK.UIStackSystem.Runtime.IUIEventInvoker.html">IUIEventInvoker</a>
   </div>
 </article>
           </div>
