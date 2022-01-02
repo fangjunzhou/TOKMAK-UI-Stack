@@ -52,8 +52,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Package\Editor\UIStackManagerCustomEditor.cs" />
+     <Compile Include="Assets\Package\Editor\UIManagerCustomEditor.cs" />
      <Compile Include="Assets\Package\Editor\UIStackEvent\UIStackEventDrawer.cs" />
+     <Compile Include="Assets\Package\Editor\UIAnimationEventEditor.cs" />
      <None Include="Assets\Package\Editor\FinTOKMAK.UIStackSystem.Editor.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -13,11 +13,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1b004ad2-31c8-e93e-fc57-79fbffeebede}</ProjectGuid>
+    <ProjectGuid>{fee70ecb-0afd-8ab2-2f94-6f266d8c007a}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>FinTOKMAK.UIStackSystem.Runtime</AssemblyName>
+    <AssemblyName>FinTOKMAK.UIStackSystem.Runtime.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -52,20 +52,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Package\Runtime\UIStackManager.cs" />
-     <Compile Include="Assets\Package\Runtime\UIPanelElement.cs" />
-     <Compile Include="Assets\Package\Runtime\UIPanelChild.cs" />
-     <Compile Include="Assets\Package\Runtime\IUIPanelStack.cs" />
-     <Compile Include="Assets\Package\Runtime\IUIPanelTab.cs" />
-     <Compile Include="Assets\Package\Runtime\UIEventInvoker.cs" />
-     <Compile Include="Assets\Package\Runtime\UITabManager.cs" />
-     <Compile Include="Assets\Package\Runtime\IUIPanelElement.cs" />
-     <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackEventManager.cs" />
-     <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackEventSettings.cs" />
-     <Compile Include="Assets\Package\Runtime\UIStackEvent\UIStackEventAttribute.cs" />
-     <Compile Include="Assets\Package\Runtime\IUIEventInvoker.cs" />
-     <Compile Include="Assets\Package\Runtime\UIManager.cs" />
-     <None Include="Assets\Package\Runtime\FinTOKMAK.UIStackSystem.Runtime.asmdef" />
+     <Compile Include="Assets\Package\Tests\Runtime\UIPanelElementTest.cs" />
+     <None Include="Assets\Package\Tests\Runtime\FinTOKMAK.UIStackSystem.Runtime.Tests.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -288,32 +276,8 @@
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.Graphs">
- <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.OSXStandalone.Extensions">
- <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.LinuxStandalone.Extensions">
- <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="unityplastic">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
- </Reference>
- <Reference Include="log4netPlastic">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
- </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -660,23 +624,11 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
- <Reference Include="NaughtyAttributes.Core">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
- <Reference Include="UnityInterfaceSupport">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityInterfaceSupport.dll</HintPath>
- </Reference>
- <Reference Include="SerializableDict.Runtime">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="FinTOKMAK.EventSystem.Runtime">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/FinTOKMAK.EventSystem.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="com.hextantstudios.utilities">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/com.hextantstudios.utilities.dll</HintPath>
- </Reference>
- <Reference Include="Hextant Utilities">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Hextant Utilities.dll</HintPath>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -686,6 +638,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="FinTOKMAK.UIStackSystem.Runtime.csproj">
+      <Project>{1b004ad2-31c8-e93e-fc57-79fbffeebede}</Project>
+      <Name>FinTOKMAK.UIStackSystem.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
