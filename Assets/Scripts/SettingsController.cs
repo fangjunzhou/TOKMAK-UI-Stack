@@ -5,23 +5,38 @@ using FinTOKMAK.UIStackSystem.Runtime;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 namespace DefaultNamespace
 {
-    public class SettingsButtonController : UIPanelChild
+    public class SettingsController : UIPanelChild
     {
         #region Public Field
 
         [BoxGroup("Panel References")]
         [ValidateInput("IsPanelValid", "The panel is not in the UIPanels in panelRootManager.")]
         public UIPanelElement settingsPanel;
+
+        /// <summary>
+        /// The action to trigger settings panel open.
+        /// </summary>
+        [BoxGroup("Panel References")]
+        public InputAction escAction;
         
         #endregion
 
         #region Private Field
 
         #endregion
+
+        private void Awake()
+        {
+            escAction.started += context =>
+            {
+                OpenSettingsPanel();
+            };
+        }
 
         #region Public Methods
 
