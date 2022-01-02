@@ -32,18 +32,31 @@ namespace DefaultNamespace
 
         private void Awake()
         {
-            escAction.started += context =>
-            {
-                OpenSettingsPanel();
-            };
+            escAction.performed += EscActionOnPerformed;
         }
 
-        #region Public Methods
+        private void OnEnable()
+        {
+            escAction.Enable();
+        }
+
+        private void OnDisable()
+        {
+            escAction.Disable();
+        }
+
+        private void EscActionOnPerformed(InputAction.CallbackContext ctx)
+        {
+            Debug.Log(ctx.phase);
+            //OpenSettingsPanel();
+        }
+
+        #region Private Methods
 
         /// <summary>
         /// Call this method to open the settings panel in the UI Stack Manager
         /// </summary>
-        public void OpenSettingsPanel()
+        private void OpenSettingsPanel()
         {
             throw new NotImplementedException();
         }
