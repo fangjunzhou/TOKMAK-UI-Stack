@@ -751,12 +751,19 @@ references:
   commentId: F:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelRootManager
   fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.panelRootManager
   nameWithType: UIPanelElement.panelRootManager
-- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
-  name: UIPanelElementStringDict
-  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict.html
-  commentId: T:FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
-  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElementStringDict
-  nameWithType: UIPanelElementStringDict
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.state
+  name: state
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_state
+  commentId: P:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.state
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.state
+  nameWithType: UIPanelElement.state
+- uid: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.state*
+  name: state
+  href: api/FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.html#FinTOKMAK_UIStackSystem_Runtime_UIPanelElement_state_
+  commentId: Overload:FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.state
+  isSpec: "True"
+  fullName: FinTOKMAK.UIStackSystem.Runtime.UIPanelElement.state
+  nameWithType: UIPanelElement.state
 - uid: FinTOKMAK.UIStackSystem.Runtime.UIStackEvent
   name: FinTOKMAK.UIStackSystem.Runtime.UIStackEvent
   href: api/FinTOKMAK.UIStackSystem.Runtime.UIStackEvent.html
@@ -896,6 +903,31 @@ references:
   commentId: N:Package.Editor
   fullName: Package.Editor
   nameWithType: Package.Editor
+- uid: Package.Editor.UIAnimationEventEditor
+  name: UIAnimationEventEditor
+  href: api/Package.Editor.UIAnimationEventEditor.html
+  commentId: T:Package.Editor.UIAnimationEventEditor
+  fullName: Package.Editor.UIAnimationEventEditor
+  nameWithType: UIAnimationEventEditor
+- uid: Package.Editor.UIManagerCustomEditor
+  name: UIManagerCustomEditor
+  href: api/Package.Editor.UIManagerCustomEditor.html
+  commentId: T:Package.Editor.UIManagerCustomEditor
+  fullName: Package.Editor.UIManagerCustomEditor
+  nameWithType: UIManagerCustomEditor
+- uid: Package.Editor.UIManagerCustomEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/Package.Editor.UIManagerCustomEditor.html#Package_Editor_UIManagerCustomEditor_OnInspectorGUI
+  commentId: M:Package.Editor.UIManagerCustomEditor.OnInspectorGUI
+  fullName: Package.Editor.UIManagerCustomEditor.OnInspectorGUI()
+  nameWithType: UIManagerCustomEditor.OnInspectorGUI()
+- uid: Package.Editor.UIManagerCustomEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/Package.Editor.UIManagerCustomEditor.html#Package_Editor_UIManagerCustomEditor_OnInspectorGUI_
+  commentId: Overload:Package.Editor.UIManagerCustomEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: Package.Editor.UIManagerCustomEditor.OnInspectorGUI
+  nameWithType: UIManagerCustomEditor.OnInspectorGUI
 - uid: Package.Editor.UIStackEvent
   name: Package.Editor.UIStackEvent
   href: api/Package.Editor.UIStackEvent.html
@@ -927,16 +959,9 @@ references:
   commentId: T:Package.Editor.UIStackManagerCustomEditor
   fullName: Package.Editor.UIStackManagerCustomEditor
   nameWithType: UIStackManagerCustomEditor
-- uid: Package.Editor.UIStackManagerCustomEditor.OnInspectorGUI
-  name: OnInspectorGUI()
-  href: api/Package.Editor.UIStackManagerCustomEditor.html#Package_Editor_UIStackManagerCustomEditor_OnInspectorGUI
-  commentId: M:Package.Editor.UIStackManagerCustomEditor.OnInspectorGUI
-  fullName: Package.Editor.UIStackManagerCustomEditor.OnInspectorGUI()
-  nameWithType: UIStackManagerCustomEditor.OnInspectorGUI()
-- uid: Package.Editor.UIStackManagerCustomEditor.OnInspectorGUI*
-  name: OnInspectorGUI
-  href: api/Package.Editor.UIStackManagerCustomEditor.html#Package_Editor_UIStackManagerCustomEditor_OnInspectorGUI_
-  commentId: Overload:Package.Editor.UIStackManagerCustomEditor.OnInspectorGUI
-  isSpec: "True"
-  fullName: Package.Editor.UIStackManagerCustomEditor.OnInspectorGUI
-  nameWithType: UIStackManagerCustomEditor.OnInspectorGUI
+- uid: Package.Editor.UITabManagerCustomEditor
+  name: UITabManagerCustomEditor
+  href: api/Package.Editor.UITabManagerCustomEditor.html
+  commentId: T:Package.Editor.UITabManagerCustomEditor
+  fullName: Package.Editor.UITabManagerCustomEditor
+  nameWithType: UITabManagerCustomEditor
