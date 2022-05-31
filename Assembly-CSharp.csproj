@@ -53,7 +53,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CloseButtonController.cs" />
+     <Compile Include="Assets\Scripts\Sample\DeployButtonController.cs" />
      <Compile Include="Assets\Scripts\SettingsController.cs" />
+     <Compile Include="Assets\Scripts\UIStackTest.cs" />
+     <Compile Include="Assets\Scripts\Sample\KillController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -299,6 +302,12 @@
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Program Files/Unity Editor/2020.3.25f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -648,17 +657,11 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
- <Reference Include="NaughtyAttributes.Test">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/NaughtyAttributes.Test.dll</HintPath>
- </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Hextant Utilities">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Hextant Utilities.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Sysroot.Linux_x86_64">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
@@ -678,32 +681,11 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
- <Reference Include="com.hextantstudios.utilities">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/com.hextantstudios.utilities.dll</HintPath>
- </Reference>
- <Reference Include="UnityInterfaceSupport">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityInterfaceSupport.dll</HintPath>
- </Reference>
- <Reference Include="FinTOKMAK.EventSystem.Editor">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/FinTOKMAK.EventSystem.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
- </Reference>
- <Reference Include="SerializableDict.Editor">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/SerializableDict.Editor.dll</HintPath>
- </Reference>
- <Reference Include="SerializableDict.Runtime">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="NaughtyAttributes.Editor">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/NaughtyAttributes.Editor.dll</HintPath>
- </Reference>
- <Reference Include="FinTOKMAK.EventSystem.Runtime">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/FinTOKMAK.EventSystem.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
@@ -711,14 +693,41 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.SysrootPackage.Editor">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="NaughtyAttributes.Editor">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/NaughtyAttributes.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="NaughtyAttributes.Test">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/NaughtyAttributes.Test.dll</HintPath>
+ </Reference>
  <Reference Include="NaughtyAttributes.Core">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="SerializableDict.Runtime">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/SerializableDict.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="SerializableDict.Editor">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/SerializableDict.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Hextant Utilities">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Hextant Utilities.dll</HintPath>
+ </Reference>
+ <Reference Include="com.hextantstudios.utilities">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/com.hextantstudios.utilities.dll</HintPath>
+ </Reference>
+ <Reference Include="FinTOKMAK.EventSystem.Runtime">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/FinTOKMAK.EventSystem.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="FinTOKMAK.EventSystem.Editor">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/FinTOKMAK.EventSystem.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityInterfaceSupport.Editor">
  <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityInterfaceSupport.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.SysrootPackage.Editor">
- <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+ <Reference Include="UnityInterfaceSupport">
+ <HintPath>D:/Unity Project/TOKMAK-UI-Stack/Library/ScriptAssemblies/UnityInterfaceSupport.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

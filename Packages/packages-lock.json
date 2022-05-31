@@ -8,32 +8,36 @@
       "hash": "c5bd85b033ee9994cf7b4d711479e2602d42c639"
     },
     "com.dbrizov.naughtyattributes": {
-      "version": "https://github.com/dbrizov/NaughtyAttributes.git#v2.1.1",
+      "version": "2.1.4",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {},
-      "hash": "6ff42768879f6d3721f27c1fc1ba0c1d145a3f27"
+      "url": "https://registry.npmjs.org"
+    },
+    "com.fintokmak.serializabledictionary": {
+      "version": "0.1.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
     },
     "com.fintokmak.universaleventsystem": {
-      "version": "https://github.com/Fangjun-Zhou/TOKMAK-Universal-Event-Release.git#main",
+      "version": "0.2.4",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "21858c704caf848b8923afc620f6bc11c6c67640"
+      "source": "registry",
+      "dependencies": {
+        "com.dbrizov.naughtyattributes": "2.1.4",
+        "com.fintokmak.serializabledictionary": "0.1.0",
+        "com.hextantstudios.utilities": "0.1.0"
+      },
+      "url": "https://registry.npmjs.org"
     },
     "com.hextantstudios.utilities": {
-      "version": "https://github.com/hextantstudios/com.hextantstudios.utilities.git#master",
+      "version": "0.1.0",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {},
-      "hash": "d6230d06ab6cbc7379d7e378f2c2b5d9b5ab9a91"
-    },
-    "com.serializabledictionary": {
-      "version": "https://github.com/Fangjun-Zhou/Unity-SerializableDictionary.git#upm-serializabledictionary",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "9bc332f23c44fd68484e16a2d769a1b0e9f216b2"
+      "url": "https://registry.npmjs.org"
     },
     "com.unity.collab-proxy": {
       "version": "1.15.4",
@@ -170,11 +174,11 @@
       }
     },
     "net.wraithavengames.unityinterfacesupport": {
-      "version": "https://github.com/TheDudeFromCI/Unity-Interface-Support.git?path=/Packages/net.wraithavengames.unityinterfacesupport",
+      "version": "1.0.0",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {},
-      "hash": "3094e7820a3ecd9c8b70b6f16ee4ac9867e34404"
+      "url": "https://registry.npmjs.org"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
